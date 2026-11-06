@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="aagoiBlueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1686D9" />
+      <stop offset="100%" stop-color="#1269A8" />
+    </linearGradient>
+    <linearGradient id="swooshGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1269A8" />
+      <stop offset="60%" stop-color="#1686D9" />
+      <stop offset="100%" stop-color="#17A6A0" />
+    </linearGradient>
+  </defs>
+  <!-- Background rounded squircle -->
+  <rect width="64" height="64" rx="14" fill="#152D46" />
+  
+  <!-- Stylized 'A' mark matching Aagoi identity -->
+  <path d="M 16 48 L 32 14 L 40 31 L 34.5 42 L 32 37 L 23 48 Z" fill="#FFFFFF" />
+  
+  <!-- Dynamic Career Forward Swoosh -->
+  <path d="M 13 41 C 20 37 31 34 49 35 C 44 38 31 40 21 44 Z" fill="url(#swooshGrad)" />
+  
+  <!-- Dynamic 'i' dot indicator -->
+  <circle cx="49" cy="20" r="4.5" fill="#1686D9" />
+</svg>

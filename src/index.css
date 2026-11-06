@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #152D46;
+  --color-navy-dark: #0D1D2E;
+  --color-navy-light: #1D3D5E;
+  --color-blue-primary: #1269A8;
+  --color-blue-bright: #1686D9;
+  --color-blue-light: #EBF4FC;
+  --color-teal-accent: #17A6A0;
+  --color-teal-light: #E8F7F6;
+  --color-offwhite: #F7F9FC;
+  --color-surface-white: #FFFFFF;
+  --color-slate-secondary: #526477;
+  --color-slate-light: #8A99A8;
+  --color-border-light: #E5EAF0;
+  --color-border-subtle: #EEF2F6;
+
+  --font-heading: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #F7F9FC;
+  color: #152D46;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+::selection {
+  background-color: #1269A8;
+  color: #FFFFFF;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
