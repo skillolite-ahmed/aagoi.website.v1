@@ -1,3 +1,4 @@
+
 import React from 'react';
 import {
   ArrowUpRight,
@@ -11,32 +12,40 @@ import { siteConfig } from '../config/site';
 
 export const Hero: React.FC = () => {
   return (
-    <section id="home" className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden bg-gradient-to-b from-white via-[#F7F9FC] to-[#F7F9FC]">
-      {/* Subtle background tech grid pattern */}
+    <section
+      id="home"
+      className="relative scroll-mt-28 pt-40 pb-16 sm:pt-44 sm:pb-20 lg:pt-48 lg:pb-24 overflow-hidden bg-gradient-to-b from-white via-[#F7F9FC] to-[#F7F9FC]"
+    >
+      {/* Subtle background technology pattern */}
       <div
-        className="absolute inset-0 pointer-events-none opacity-[0.04]"
+        aria-hidden="true"
+        className="absolute inset-0 pointer-events-none opacity-[0.035]"
         style={{
-          backgroundImage: `radial-gradient(#152D46 1px, transparent 1px)`,
+          backgroundImage:
+            'radial-gradient(#152D46 1px, transparent 1px)',
           backgroundSize: '24px 24px',
         }}
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
-          {/* Left Column: Core Positioning & Messaging */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-center">
+
+          {/* LEFT: BRAND POSITIONING */}
           <div className="lg:col-span-7 space-y-6 text-left">
-            {/* Badges: Coming Soon & Introductory Label */}
+
+            {/* Status badges */}
             <div className="inline-flex flex-wrap items-center gap-2.5">
               <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold tracking-wider uppercase bg-[#1269A8]/10 text-[#1269A8] border border-[#1269A8]/20">
                 <span className="w-2 h-2 rounded-full bg-[#1269A8] animate-pulse" />
                 {siteConfig.status}
               </span>
+
               <span className="text-xs font-semibold tracking-wider uppercase text-[#526477] bg-white px-3 py-1 rounded-full border border-[#E5EAF0]">
                 {siteConfig.introLabel}
               </span>
             </div>
 
-            {/* Main Heading */}
+            {/* Main headline */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#152D46] tracking-tight leading-[1.12]">
               Your Experience Deserves a{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1269A8] via-[#1686D9] to-[#17A6A0]">
@@ -44,28 +53,31 @@ export const Hero: React.FC = () => {
               </span>
             </h1>
 
-            {/* Supporting Paragraph */}
+            {/* Supporting description */}
             <p className="text-lg sm:text-xl text-[#526477] leading-relaxed max-w-2xl font-normal">
-              Aagoi brings together AI-powered solutions, practical technology and
-              personalised human assistance to help experienced professionals navigate
-              their next career move with greater clarity, structure and confidence.
+              Aagoi brings together AI-powered solutions, practical technology
+              and personalised human assistance to help experienced
+              professionals navigate their next career move with greater
+              clarity, structure and confidence.
             </p>
 
-            {/* Supporting Pillar Labels */}
+            {/* Brand pillars */}
             <div className="pt-2 flex flex-wrap gap-3">
-              <div className="flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-white border border-[#E5EAF0] shadow-2xs">
+              <div className="flex items-center gap-2 px-3.5 py-2 rounded-lg bg-white border border-[#E5EAF0] shadow-sm">
                 <Sparkles className="w-4 h-4 text-[#1686D9]" />
                 <span className="text-xs sm:text-sm font-semibold text-[#152D46]">
                   AI-Powered Solutions
                 </span>
               </div>
-              <div className="flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-white border border-[#E5EAF0] shadow-2xs">
+
+              <div className="flex items-center gap-2 px-3.5 py-2 rounded-lg bg-white border border-[#E5EAF0] shadow-sm">
                 <Users className="w-4 h-4 text-[#17A6A0]" />
                 <span className="text-xs sm:text-sm font-semibold text-[#152D46]">
                   Human-Centred Support
                 </span>
               </div>
-              <div className="flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-white border border-[#E5EAF0] shadow-2xs">
+
+              <div className="flex items-center gap-2 px-3.5 py-2 rounded-lg bg-white border border-[#E5EAF0] shadow-sm">
                 <Network className="w-4 h-4 text-[#1269A8]" />
                 <span className="text-xs sm:text-sm font-semibold text-[#152D46]">
                   Connected Career Ecosystem
@@ -73,7 +85,7 @@ export const Hero: React.FC = () => {
               </div>
             </div>
 
-            {/* CTAs */}
+            {/* Call-to-action buttons */}
             <div className="pt-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
               <a
                 href={siteConfig.forms.client}
@@ -94,368 +106,518 @@ export const Hero: React.FC = () => {
               </a>
             </div>
 
-            {/* Sub-note */}
+            {/* Supporting note */}
             <p className="text-xs sm:text-sm text-[#526477] pt-1">
               Be among the first to explore what we&apos;re building.
             </p>
           </div>
 
-          {/* Right Column: Aagoi Career Journey Illustration */}
+          {/* RIGHT: CAREER JOURNEY ILLUSTRATION */}
           <div className="lg:col-span-5 relative">
-            <div className="relative mx-auto max-w-md lg:max-w-none">
-              {/* Decorative gradient glow backdrop */}
-              <div className="absolute -inset-2 bg-gradient-to-tr from-[#1269A8]/10 via-[#17A6A0]/10 to-[#1686D9]/15 rounded-3xl blur-2xl -z-10" />
+            <div className="relative mx-auto w-full max-w-[560px] lg:max-w-none">
 
-              {/* Main Container Card */}
-              <div className="bg-white/95 rounded-2xl border border-[#E5EAF0] p-6 shadow-xl relative overflow-hidden backdrop-blur-sm">
+              {/* Subtle background glow */}
+              <div
+                aria-hidden="true"
+                className="absolute -inset-2 bg-gradient-to-tr from-[#1269A8]/10 via-[#17A6A0]/10 to-[#1686D9]/15 rounded-3xl blur-2xl"
+              />
 
-                {/* Card Header — preserved structure, updated label */}
-                <div className="flex items-center justify-between pb-4 border-b border-[#E5EAF0] mb-4">
-                  <div className="flex items-center gap-2">
-                    <span className="w-3 h-3 rounded-full bg-[#1269A8]" />
-                    <span className="text-xs font-bold uppercase tracking-wider text-[#152D46]">
+              {/* Main illustration card */}
+              <div className="relative bg-white rounded-2xl border border-[#E5EAF0] p-4 sm:p-6 shadow-xl">
+
+                {/* Card header */}
+                <div className="flex items-center justify-between gap-3 pb-4 border-b border-[#E5EAF0] mb-3">
+
+                  <div className="flex items-center gap-2 min-w-0">
+                    <span className="w-3 h-3 rounded-full bg-[#1269A8] shrink-0" />
+
+                    <span className="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-[#152D46]">
                       The Aagoi Career Journey
                     </span>
                   </div>
-                  <span className="text-[11px] font-semibold text-[#17A6A0] bg-[#17A6A0]/10 px-2.5 py-0.5 rounded-full">
+
+                  <span className="text-[10px] sm:text-[11px] font-semibold text-[#17A6A0] bg-[#17A6A0]/10 px-2.5 py-1 rounded-full whitespace-nowrap">
                     Aagoi Ecosystem
                   </span>
                 </div>
 
-                {/* ── RADIAL CAREER JOURNEY ILLUSTRATION ── */}
+                {/* Career journey diagram */}
                 <CareerJourneyDiagram />
 
-                {/* Card Footer — updated stage labels */}
-                <div className="mt-4 pt-4 border-t border-[#E5EAF0] flex items-center justify-between text-xs text-[#526477]">
-                  <div className="flex items-center gap-2">
+                {/* Card footer */}
+                <div className="mt-3 pt-4 border-t border-[#E5EAF0] flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs sm:text-sm text-[#526477]">
+
+                  <div className="flex items-center gap-2 min-w-0">
                     <TrendingUp className="w-4 h-4 text-[#1269A8] shrink-0" />
+
                     <span className="font-medium">
                       Discover &bull; Position &bull; Connect &bull; Progress
                     </span>
                   </div>
-                  <span className="font-semibold text-[#152D46] whitespace-nowrap ml-2">
+
+                  <span className="font-semibold text-[#152D46] whitespace-nowrap">
                     Outcome-Oriented
                   </span>
                 </div>
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>
   );
 };
 
-/* ─────────────────────────────────────────────────────────────
-   CareerJourneyDiagram — isolated sub-component so the SVG
-   markup stays clean and self-contained.  Uses only the icon
-   set already imported above and the official Aagoi logo asset.
-───────────────────────────────────────────────────────────── */
+
+/* ============================================================
+   AAGOI CAREER JOURNEY DIAGRAM
+
+   Journey sequence, clockwise:
+
+   01 Discover  →  02 Position
+                         ↓
+   04 Progress  ←  03 Connect
+
+   The official Aagoi logo remains at the centre.
+============================================================ */
+
 const CareerJourneyDiagram: React.FC = () => {
-  /* Node geometry — four corners of a balanced radial layout */
-  const W = 380;
-  const H = 290;
-  const cx = 190; // central x
-  const cy = 145; // central y
 
-  // Corner positions (node card top-left origin)
-  const TL = { x: 12,  y: 28  }; // 01 Discover   — top-left
-  const TR = { x: 248, y: 28  }; // 02 Position   — top-right
-  const BL = { x: 12,  y: 198 }; // 03 Connect    — bottom-left
-  const BR = { x: 248, y: 198 }; // 04 Progress   — bottom-right
+  const W = 520;
+  const H = 360;
 
-  // Node card dimensions
-  const NW = 120; // node width
-  const NH = 52;  // node height
+  const cx = 260;
+  const cy = 180;
 
-  // Edge midpoints of each node card (the connection attachment point)
-  const TLm = { x: TL.x + NW,     y: TL.y + NH / 2 }; // right edge
-  const TRm = { x: TR.x,          y: TR.y + NH / 2 }; // left edge
-  const BLm = { x: BL.x + NW,     y: BL.y + NH / 2 }; // right edge
-  const BRm = { x: BR.x,          y: BR.y + NH / 2 }; // left edge
+  const NW = 190;
+  const NH = 68;
 
-  // Central card edges
-  const centreL = cx - 44;
-  const centreR = cx + 44;
-  const centreT = cy - 44;
-  const centreB = cy + 44;
+  // Clockwise stage positions
+  const stages = {
+    discover: { x: 12, y: 48 },
+    position: { x: 318, y: 48 },
+    connect: { x: 318, y: 244 },
+    progress: { x: 12, y: 244 },
+  };
+
+  const central = {
+    x: cx - 52,
+    y: cy - 52,
+    width: 104,
+    height: 104,
+  };
+
+  const leftEdge = central.x;
+  const rightEdge = central.x + central.width;
+  const topEdge = central.y;
+  const bottomEdge = central.y + central.height;
 
   return (
-    <div className="relative w-full" style={{ height: '17rem' }}>
+    <div className="w-full">
       <svg
-        className="w-full h-full"
         viewBox={`0 0 ${W} ${H}`}
-        fill="none"
-        aria-label="Aagoi Career Journey: four connected stages — Discover, Position, Connect, Progress — centred around the Aagoi ecosystem"
+        className="block w-full h-auto"
+        role="img"
+        aria-labelledby="career-diagram-title career-diagram-description"
       >
+        <title id="career-diagram-title">
+          The Aagoi Career Journey
+        </title>
+
+        <desc id="career-diagram-description">
+          Four connected career stages arranged clockwise around the
+          official Aagoi logo: Discover, Position, Connect and Progress.
+        </desc>
+
         <defs>
-          {/* Journey progression gradient — left → right, Discover → Progress */}
-          <linearGradient id="cjGradL" x1="0%" y1="0%" x2="100%" y2="0%">
+
+          <linearGradient id="aagoi-journey-gradient" x1="0" y1="0" x2="1" y2="1">
             <stop offset="0%" stopColor="#1686D9" />
-            <stop offset="100%" stopColor="#1269A8" />
-          </linearGradient>
-          <linearGradient id="cjGradR" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" stopColor="#1269A8" />
             <stop offset="100%" stopColor="#17A6A0" />
           </linearGradient>
-          <linearGradient id="cjGradBL" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" stopColor="#17A6A0" />
-            <stop offset="100%" stopColor="#1269A8" />
-          </linearGradient>
-          <linearGradient id="cjGradBR" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" stopColor="#1269A8" />
+
+          <linearGradient id="aagoi-top-gradient">
+            <stop offset="0%" stopColor="#1686D9" />
             <stop offset="100%" stopColor="#17A6A0" />
           </linearGradient>
-          {/* Animated dash along TL→TR top connector (progression flow) */}
-          <linearGradient id="flowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" stopColor="#1686D9" stopOpacity="0" />
-            <stop offset="45%" stopColor="#1686D9" stopOpacity="1" />
-            <stop offset="55%" stopColor="#17A6A0" stopOpacity="1" />
-            <stop offset="100%" stopColor="#17A6A0" stopOpacity="0" />
-          </linearGradient>
+
+          <marker
+            id="aagoi-arrow"
+            markerWidth="7"
+            markerHeight="7"
+            refX="5"
+            refY="3.5"
+            orient="auto"
+          >
+            <path
+              d="M0 0 L7 3.5 L0 7"
+              fill="none"
+              stroke="#17A6A0"
+              strokeWidth="1.2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </marker>
+
         </defs>
 
-        {/* ── BACKGROUND GUIDE LINES (subtle dashed ghost) ── */}
+        {/* =========================================
+            OUTER CLOCKWISE JOURNEY PATH
+        ========================================= */}
+
+        {/* Discover → Position */}
         <path
-          d={`M ${TLm.x} ${TLm.y} C ${cx - 60} ${TLm.y}, ${centreL} ${centreT + 10}, ${centreL} ${cy}`}
-          stroke="#E5EAF0" strokeWidth="1.5" strokeDasharray="5 4"
-        />
-        <path
-          d={`M ${TRm.x} ${TRm.y} C ${cx + 60} ${TRm.y}, ${centreR} ${centreT + 10}, ${centreR} ${cy}`}
-          stroke="#E5EAF0" strokeWidth="1.5" strokeDasharray="5 4"
-        />
-        <path
-          d={`M ${BLm.x} ${BLm.y} C ${cx - 60} ${BLm.y}, ${centreL} ${centreB - 10}, ${centreL} ${cy}`}
-          stroke="#E5EAF0" strokeWidth="1.5" strokeDasharray="5 4"
-        />
-        <path
-          d={`M ${BRm.x} ${BRm.y} C ${cx + 60} ${BRm.y}, ${centreR} ${centreB - 10}, ${centreR} ${cy}`}
-          stroke="#E5EAF0" strokeWidth="1.5" strokeDasharray="5 4"
+          d="M205 29 C245 12 275 12 315 29"
+          stroke="url(#aagoi-top-gradient)"
+          strokeWidth="1.7"
+          strokeLinecap="round"
+          fill="none"
+          markerEnd="url(#aagoi-arrow)"
+          opacity="0.85"
         />
 
-        {/* ── ACTIVE GRADIENT CONNECTION LINES ── */}
-        {/* TL (Discover) → Centre */}
+        {/* Position → Connect */}
         <path
-          d={`M ${TLm.x} ${TLm.y} C ${cx - 55} ${TLm.y}, ${centreL} ${centreT + 12}, ${centreL} ${cy}`}
-          stroke="url(#cjGradL)" strokeWidth="2.5" strokeLinecap="round"
-        />
-        {/* TR (Position) → Centre */}
-        <path
-          d={`M ${TRm.x} ${TRm.y} C ${cx + 55} ${TRm.y}, ${centreR} ${centreT + 12}, ${centreR} ${cy}`}
-          stroke="url(#cjGradR)" strokeWidth="2.5" strokeLinecap="round"
-        />
-        {/* BL (Connect) → Centre */}
-        <path
-          d={`M ${BLm.x} ${BLm.y} C ${cx - 55} ${BLm.y}, ${centreL} ${centreB - 12}, ${centreL} ${cy}`}
-          stroke="url(#cjGradBL)" strokeWidth="2.5" strokeLinecap="round"
-        />
-        {/* BR (Progress) → Centre */}
-        <path
-          d={`M ${BRm.x} ${BRm.y} C ${cx + 55} ${BRm.y}, ${centreR} ${centreB - 12}, ${centreR} ${cy}`}
-          stroke="url(#cjGradBR)" strokeWidth="2.5" strokeLinecap="round"
+          d="M515 125 C526 160 526 200 515 235"
+          stroke="url(#aagoi-journey-gradient)"
+          strokeWidth="1.7"
+          strokeLinecap="round"
+          fill="none"
+          markerEnd="url(#aagoi-arrow)"
+          opacity="0.85"
         />
 
-        {/* ── DIRECTIONAL SEQUENCE ARROWS (top arc: Discover→Position) ── */}
-        {/* Curved arc across the top showing sequential flow */}
+        {/* Connect → Progress */}
         <path
-          d={`M ${TL.x + NW / 2} ${TL.y - 4} C ${cx} ${TL.y - 18}, ${cx} ${TR.y - 18}, ${TR.x + NW / 2} ${TR.y - 4}`}
-          stroke="url(#flowGrad)" strokeWidth="1.5" strokeLinecap="round"
-        />
-        {/* Arrowhead at TR end */}
-        <polygon
-          points={`${TR.x + NW / 2 - 5},${TR.y - 10} ${TR.x + NW / 2 + 2},${TR.y - 5} ${TR.x + NW / 2 - 2},${TR.y - 2}`}
-          fill="#1686D9" opacity="0.7"
+          d="M315 331 C275 348 245 348 205 331"
+          stroke="url(#aagoi-journey-gradient)"
+          strokeWidth="1.7"
+          strokeLinecap="round"
+          fill="none"
+          markerEnd="url(#aagoi-arrow)"
+          opacity="0.85"
         />
 
-        {/* Curved arc across the bottom showing sequential flow: Connect→Progress */}
+        {/* Progress → Discover */}
         <path
-          d={`M ${BL.x + NW / 2} ${BL.y + NH + 4} C ${cx} ${BL.y + NH + 18}, ${cx} ${BR.y + NH + 18}, ${BR.x + NW / 2} ${BR.y + NH + 4}`}
-          stroke="url(#flowGrad)" strokeWidth="1.5" strokeLinecap="round"
-        />
-        {/* Arrowhead at BR end */}
-        <polygon
-          points={`${BR.x + NW / 2 - 5},${BR.y + NH + 10} ${BR.x + NW / 2 + 2},${BR.y + NH + 5} ${BR.x + NW / 2 - 2},${BR.y + NH + 2}`}
-          fill="#17A6A0" opacity="0.7"
+          d="M5 235 C-4 200 -4 160 5 125"
+          stroke="url(#aagoi-journey-gradient)"
+          strokeWidth="1.7"
+          strokeLinecap="round"
+          fill="none"
+          markerEnd="url(#aagoi-arrow)"
+          opacity="0.85"
         />
 
-        {/* ── STAGE 01 — DISCOVER (top-left) ── */}
+        {/* =========================================
+            CENTRAL CONNECTIONS
+            Rendered behind the stage nodes and logo.
+        ========================================= */}
+
+        <g
+          stroke="url(#aagoi-journey-gradient)"
+          strokeWidth="2.4"
+          strokeLinecap="round"
+          fill="none"
+        >
+
+          {/* Discover → Aagoi Core */}
+          <path
+            d={`M202 82 C224 82 ${leftEdge} 120 ${leftEdge} ${topEdge + 27}`}
+          />
+
+          {/* Position → Aagoi Core */}
+          <path
+            d={`M318 82 C296 82 ${rightEdge} 120 ${rightEdge} ${topEdge + 27}`}
+          />
+
+          {/* Connect → Aagoi Core */}
+          <path
+            d={`M318 278 C296 278 ${rightEdge} 240 ${rightEdge} ${bottomEdge - 27}`}
+          />
+
+          {/* Progress → Aagoi Core */}
+          <path
+            d={`M202 278 C224 278 ${leftEdge} 240 ${leftEdge} ${bottomEdge - 27}`}
+          />
+
+        </g>
+
+        {/* =========================================
+            FOUR JOURNEY STAGES
+        ========================================= */}
+
+        {/* 01 DISCOVER */}
         <StageNode
-          x={TL.x} y={TL.y} w={NW} h={NH}
+          x={stages.discover.x}
+          y={stages.discover.y}
+          w={NW}
+          h={NH}
           num="01"
           accentColor="#1686D9"
-          ringColor="#1686D9"
           Icon={CompassIcon}
           title="Discover"
           sub="Experience, Skills & Goals"
         />
 
-        {/* ── STAGE 02 — POSITION (top-right) ── */}
+        {/* 02 POSITION */}
         <StageNode
-          x={TR.x} y={TR.y} w={NW} h={NH}
+          x={stages.position.x}
+          y={stages.position.y}
+          w={NW}
+          h={NH}
           num="02"
           accentColor="#1269A8"
-          ringColor="#1269A8"
           Icon={TargetIcon}
           title="Position"
-          sub="Intelligent Positioning"
+          sub="Intelligent Career Positioning"
         />
 
-        {/* ── STAGE 03 — CONNECT (bottom-left) ── */}
+        {/* 03 CONNECT — bottom-right */}
         <StageNode
-          x={BL.x} y={BL.y} w={NW} h={NH}
+          x={stages.connect.x}
+          y={stages.connect.y}
+          w={NW}
+          h={NH}
           num="03"
           accentColor="#17A6A0"
-          ringColor="#17A6A0"
           Icon={UsersIcon}
           title="Connect"
-          sub="Opportunities & Guidance"
+          sub="Opportunities & Human Guidance"
         />
 
-        {/* ── STAGE 04 — PROGRESS (bottom-right) ── */}
+        {/* 04 PROGRESS — bottom-left */}
         <StageNode
-          x={BR.x} y={BR.y} w={NW} h={NH}
+          x={stages.progress.x}
+          y={stages.progress.y}
+          w={NW}
+          h={NH}
           num="04"
           accentColor="#1269A8"
-          ringColor="#17A6A0"
           Icon={TrendingUpIcon}
           title="Progress"
           sub="Clarity & Career Growth"
         />
 
-        {/* ── CENTRAL CARD — Official Aagoi Logo ── */}
-        {/* Navy card background */}
+        {/* =========================================
+            CENTRAL AAGOI BRAND ELEMENT
+        ========================================= */}
+
         <rect
-          x={cx - 46} y={cy - 46}
-          width={92} height={92}
-          rx={16}
+          x={central.x}
+          y={central.y}
+          width={central.width}
+          height={central.height}
+          rx="18"
           fill="#152D46"
-          filter="drop-shadow(0 8px 20px rgba(21,45,70,0.30))"
+          stroke="#264866"
+          strokeWidth="1"
+          style={{
+            filter: 'drop-shadow(0px 7px 12px rgba(21,45,70,0.20))',
+          }}
         />
-        {/* Dashed orbit ring */}
-        <circle
-          cx={cx} cy={cy} r={36}
-          stroke="#1686D9" strokeWidth="1.2"
-          strokeDasharray="4 4"
-          opacity="0.5"
-        />
-        {/* Official Aagoi logo — white variant for navy background */}
+
+        {/* Official Aagoi logo asset */}
         <image
           href="/aagoi-logo-white.png"
-          x={cx - 34} y={cy - 16}
-          width={68} height={26}
+          x={cx - 40}
+          y={cy - 22}
+          width="80"
+          height="32"
           preserveAspectRatio="xMidYMid meet"
         />
-        {/* "Aagoi Core" supporting label */}
+
+        {/* Supporting brand label */}
         <text
-          x={cx} y={cy + 30}
+          x={cx}
+          y={cy + 29}
           textAnchor="middle"
-          fill="#94A3B8"
-          fontSize="7"
+          fill="#B9C9D9"
+          fontSize="9"
           fontWeight="600"
-          letterSpacing="0.8"
+          letterSpacing="1"
         >
           AAGOI CORE
         </text>
+
       </svg>
     </div>
   );
 };
 
-/* ── Inline SVG icon drawers (re-use same stroke weight as Lucide) ── */
-const CompassIcon = ({ cx, cy }: { cx: number; cy: number }) => (
-  <g transform={`translate(${cx - 7}, ${cy - 7})`}>
-    <circle cx="7" cy="7" r="6" stroke="currentColor" strokeWidth="1.6" fill="none" />
-    <path d="M 9.5 4.5 L 7.5 7 L 4.5 9.5 L 6.5 7 Z" stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round" fill="currentColor" fillOpacity="0.3" />
-    <circle cx="7" cy="7" r="1.2" fill="currentColor" />
-  </g>
-);
-const TargetIcon = ({ cx, cy }: { cx: number; cy: number }) => (
-  <g transform={`translate(${cx - 7}, ${cy - 7})`}>
-    <circle cx="7" cy="7" r="6" stroke="currentColor" strokeWidth="1.6" fill="none" />
-    <circle cx="7" cy="7" r="3.5" stroke="currentColor" strokeWidth="1.4" fill="none" />
-    <circle cx="7" cy="7" r="1.2" fill="currentColor" />
-  </g>
-);
-const UsersIcon = ({ cx, cy }: { cx: number; cy: number }) => (
-  <g transform={`translate(${cx - 7}, ${cy - 7})`}>
-    <circle cx="5" cy="4.5" r="2.2" stroke="currentColor" strokeWidth="1.4" fill="none" />
-    <path d="M 1.5 12 C 1.5 9.5 3 8 5 8 C 7 8 8.5 9.5 8.5 12" stroke="currentColor" strokeWidth="1.4" fill="none" strokeLinecap="round" />
-    <circle cx="9.5" cy="4.5" r="2.2" stroke="currentColor" strokeWidth="1.4" fill="none" />
-    <path d="M 8 12 C 8 10 9 8.5 11 8.5" stroke="currentColor" strokeWidth="1.4" fill="none" strokeLinecap="round" />
-  </g>
-);
-const TrendingUpIcon = ({ cx, cy }: { cx: number; cy: number }) => (
-  <g transform={`translate(${cx - 7}, ${cy - 7})`}>
-    <polyline points="1,10 5,6 8,8.5 13,3" stroke="currentColor" strokeWidth="1.6" fill="none" strokeLinecap="round" strokeLinejoin="round" />
-    <polyline points="9,3 13,3 13,7" stroke="currentColor" strokeWidth="1.6" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+
+/* ============================================================
+   SVG ICONS
+============================================================ */
+
+type SVGIconProps = {
+  cx: number;
+  cy: number;
+};
+
+const CompassIcon: React.FC<SVGIconProps> = ({ cx, cy }) => (
+  <g
+    transform={`translate(${cx - 8}, ${cy - 8})`}
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="1.7"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <circle cx="8" cy="8" r="6.5" />
+    <path d="M10.8 5.2 L8.9 8.9 L5.2 10.8 L7.1 7.1 Z" />
   </g>
 );
 
-/* ── StageNode — renders a single stage card inside the SVG ── */
+const TargetIcon: React.FC<SVGIconProps> = ({ cx, cy }) => (
+  <g
+    transform={`translate(${cx - 8}, ${cy - 8})`}
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="1.7"
+  >
+    <circle cx="8" cy="8" r="6.5" />
+    <circle cx="8" cy="8" r="3.5" />
+    <circle cx="8" cy="8" r="1" fill="currentColor" />
+  </g>
+);
+
+const UsersIcon: React.FC<SVGIconProps> = ({ cx, cy }) => (
+  <g
+    transform={`translate(${cx - 8}, ${cy - 8})`}
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="1.6"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <circle cx="6" cy="5" r="2.5" />
+    <path d="M1.5 14 C1.5 11 3 9.5 6 9.5 C9 9.5 10.5 11 10.5 14" />
+    <path d="M11 3.5 A2.3 2.3 0 0 1 11 8" />
+    <path d="M12 10 C14 10.5 15 11.5 15 13" />
+  </g>
+);
+
+const TrendingUpIcon: React.FC<SVGIconProps> = ({ cx, cy }) => (
+  <g
+    transform={`translate(${cx - 8}, ${cy - 8})`}
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="1.8"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <path d="M1 12 L5.5 7.5 L8.5 10 L15 3.5" />
+    <path d="M10.5 3.5 H15 V8" />
+  </g>
+);
+
+
+/* ============================================================
+   STAGE NODE COMPONENT
+============================================================ */
+
 interface StageNodeProps {
-  x: number; y: number; w: number; h: number;
+  x: number;
+  y: number;
+  w: number;
+  h: number;
   num: string;
   accentColor: string;
-  ringColor: string;
-  Icon: React.FC<{ cx: number; cy: number }>;
+  Icon: React.FC<SVGIconProps>;
   title: string;
   sub: string;
 }
+
 const StageNode: React.FC<StageNodeProps> = ({
-  x, y, w, h, num, accentColor, Icon, title, sub,
+  x,
+  y,
+  w,
+  h,
+  num,
+  accentColor,
+  Icon,
+  title,
+  sub,
 }) => {
-  const iconCx = x + 20;
+
+  const iconCx = x + 24;
   const iconCy = y + h / 2;
+
   return (
     <g>
+
       {/* Card background */}
       <rect
-        x={x} y={y} width={w} height={h}
-        rx={10}
+        x={x}
+        y={y}
+        width={w}
+        height={h}
+        rx="11"
         fill="#FFFFFF"
         stroke="#E5EAF0"
-        strokeWidth="1.5"
+        strokeWidth="1.6"
       />
-      {/* Coloured left accent bar */}
+
+      {/* Left accent indicator */}
       <rect
-        x={x} y={y + 8} width={3} height={h - 16}
-        rx={1.5}
+        x={x}
+        y={y + 10}
+        width="3"
+        height={h - 20}
+        rx="1.5"
         fill={accentColor}
-        opacity="0.7"
       />
-      {/* Icon circle */}
-      <circle cx={iconCx} cy={iconCy} r={12} fill={accentColor} fillOpacity="0.1" />
+
+      {/* Icon background */}
+      <circle
+        cx={iconCx}
+        cy={iconCy}
+        r="14"
+        fill={accentColor}
+        fillOpacity="0.10"
+      />
+
+      {/* Icon */}
       <g color={accentColor}>
         <Icon cx={iconCx} cy={iconCy} />
       </g>
+
       {/* Stage number */}
       <text
-        x={x + 38} y={y + 15}
+        x={x + 48}
+        y={y + 19}
         fill={accentColor}
-        fontSize="7.5"
+        fontSize="10"
         fontWeight="800"
-        letterSpacing="0.5"
-        opacity="0.8"
+        letterSpacing="0.7"
       >
         {num}
       </text>
-      {/* Title */}
+
+      {/* Stage title */}
       <text
-        x={x + 38} y={y + 27}
+        x={x + 48}
+        y={y + 35}
         fill="#152D46"
-        fontSize="10.5"
+        fontSize="13"
         fontWeight="700"
       >
         {title}
       </text>
-      {/* Sub-label */}
+
+      {/* Stage description */}
       <text
-        x={x + 38} y={y + 40}
+        x={x + 48}
+        y={y + 51}
         fill="#526477"
-        fontSize="8.5"
+        fontSize="10.5"
+        fontWeight="400"
       >
         {sub}
       </text>
+
     </g>
   );
 };
