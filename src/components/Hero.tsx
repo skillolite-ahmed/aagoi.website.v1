@@ -1,5 +1,12 @@
 import React from 'react';
-import { ArrowUpRight, ArrowDown, Sparkles, Compass, Network, Users } from 'lucide-react';
+import {
+  ArrowUpRight,
+  ArrowDown,
+  Sparkles,
+  Network,
+  Users,
+  TrendingUp,
+} from 'lucide-react';
 import { siteConfig } from '../config/site';
 
 export const Hero: React.FC = () => {
@@ -93,7 +100,7 @@ export const Hero: React.FC = () => {
             </p>
           </div>
 
-          {/* Right Column: Interconnected Career Ecosystem Visual */}
+          {/* Right Column: Aagoi Career Journey Illustration */}
           <div className="lg:col-span-5 relative">
             <div className="relative mx-auto max-w-md lg:max-w-none">
               {/* Decorative gradient glow backdrop */}
@@ -101,12 +108,13 @@ export const Hero: React.FC = () => {
 
               {/* Main Container Card */}
               <div className="bg-white/95 rounded-2xl border border-[#E5EAF0] p-6 shadow-xl relative overflow-hidden backdrop-blur-sm">
-                {/* Visual Header */}
-                <div className="flex items-center justify-between pb-4 border-b border-[#E5EAF0] mb-6">
+
+                {/* Card Header — preserved structure, updated label */}
+                <div className="flex items-center justify-between pb-4 border-b border-[#E5EAF0] mb-4">
                   <div className="flex items-center gap-2">
                     <span className="w-3 h-3 rounded-full bg-[#1269A8]" />
                     <span className="text-xs font-bold uppercase tracking-wider text-[#152D46]">
-                      Career Intelligence Architecture
+                      The Aagoi Career Journey
                     </span>
                   </div>
                   <span className="text-[11px] font-semibold text-[#17A6A0] bg-[#17A6A0]/10 px-2.5 py-0.5 rounded-full">
@@ -114,132 +122,20 @@ export const Hero: React.FC = () => {
                   </span>
                 </div>
 
-                {/* SVG Visual Graphic with Nodes and Flow Pathways */}
-                <div className="relative h-72 sm:h-80 w-full flex items-center justify-center">
-                  <svg className="w-full h-full" viewBox="0 0 380 300" fill="none">
-                    {/* Connecting Circuit Grid Lines */}
-                    <path
-                      d="M 60 70 C 120 70, 140 140, 190 145"
-                      stroke="#E5EAF0"
-                      strokeWidth="2"
-                      strokeDasharray="4 4"
-                    />
-                    <path
-                      d="M 60 220 C 120 220, 140 160, 190 155"
-                      stroke="#E5EAF0"
-                      strokeWidth="2"
-                      strokeDasharray="4 4"
-                    />
-                    <path
-                      d="M 190 145 C 240 140, 260 70, 320 70"
-                      stroke="#E5EAF0"
-                      strokeWidth="2"
-                      strokeDasharray="4 4"
-                    />
-                    <path
-                      d="M 190 155 C 240 160, 260 230, 320 230"
-                      stroke="#E5EAF0"
-                      strokeWidth="2"
-                      strokeDasharray="4 4"
-                    />
+                {/* ── RADIAL CAREER JOURNEY ILLUSTRATION ── */}
+                <CareerJourneyDiagram />
 
-                    {/* Active Gradient Pathways */}
-                    <path
-                      d="M 190 150 L 320 70"
-                      stroke="url(#pathGrad1)"
-                      strokeWidth="2.5"
-                    />
-                    <path
-                      d="M 60 70 L 190 150"
-                      stroke="url(#pathGrad2)"
-                      strokeWidth="2.5"
-                    />
-                    <path
-                      d="M 60 220 L 190 150"
-                      stroke="url(#pathGrad3)"
-                      strokeWidth="2.5"
-                    />
-                    <path
-                      d="M 190 150 L 320 230"
-                      stroke="url(#pathGrad4)"
-                      strokeWidth="2.5"
-                    />
-
-                    {/* Gradients */}
-                    <defs>
-                      <linearGradient id="pathGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
-                        <stop offset="0%" stop-color="#1269A8" />
-                        <stop offset="100%" stop-color="#17A6A0" />
-                      </linearGradient>
-                      <linearGradient id="pathGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
-                        <stop offset="0%" stop-color="#1686D9" />
-                        <stop offset="100%" stop-color="#1269A8" />
-                      </linearGradient>
-                      <linearGradient id="pathGrad3" x1="0%" y1="0%" x2="100%" y2="0%">
-                        <stop offset="0%" stop-color="#17A6A0" />
-                        <stop offset="100%" stop-color="#1269A8" />
-                      </linearGradient>
-                      <linearGradient id="pathGrad4" x1="0%" y1="0%" x2="100%" y2="0%">
-                        <stop offset="0%" stop-color="#1269A8" />
-                        <stop offset="100%" stop-color="#1686D9" />
-                      </linearGradient>
-                    </defs>
-
-                    {/* Node 1: Professional Experience (Top-Left) */}
-                    <g transform="translate(20, 45)">
-                      <rect width="110" height="48" rx="10" fill="#FFFFFF" stroke="#E5EAF0" strokeWidth="1.5" />
-                      <circle cx="20" cy="24" r="9" fill="#1269A8" fillOpacity="0.1" />
-                      <circle cx="20" cy="24" r="4" fill="#1269A8" />
-                      <text x="36" y="21" fill="#152D46" fontSize="10" fontWeight="700">Career Roots</text>
-                      <text x="36" y="34" fill="#526477" fontSize="9">Professional Depth</text>
-                    </g>
-
-                    {/* Node 2: Personalised Guidance (Bottom-Left) */}
-                    <g transform="translate(20, 200)">
-                      <rect width="120" height="48" rx="10" fill="#FFFFFF" stroke="#E5EAF0" strokeWidth="1.5" />
-                      <circle cx="20" cy="24" r="9" fill="#17A6A0" fillOpacity="0.1" />
-                      <circle cx="20" cy="24" r="4" fill="#17A6A0" />
-                      <text x="36" y="21" fill="#152D46" fontSize="10" fontWeight="700">Human Guidance</text>
-                      <text x="36" y="34" fill="#526477" fontSize="9">Tailored Advisory</text>
-                    </g>
-
-                    {/* Center Core: Aagoi Intelligence Engine */}
-                    <g transform="translate(145, 105)">
-                      <rect width="90" height="90" rx="18" fill="#152D46" filter="drop-shadow(0 8px 16px rgba(21, 45, 70, 0.25))" />
-                      <circle cx="45" cy="45" r="32" stroke="#1686D9" strokeWidth="1.5" strokeDasharray="3 3" />
-                      <circle cx="45" cy="45" r="22" fill="#1269A8" />
-                      <path d="M 38 48 L 45 35 L 52 48 M 41 44 L 49 44" stroke="#FFFFFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                      <circle cx="53" cy="34" r="2" fill="#17A6A0" />
-                      <text x="45" y="76" textAnchor="middle" fill="#FFFFFF" fontSize="8" fontWeight="700" letterSpacing="0.5">Aagoi Core</text>
-                    </g>
-
-                    {/* Node 3: Structured Pathways (Top-Right) */}
-                    <g transform="translate(240, 45)">
-                      <rect width="120" height="48" rx="10" fill="#FFFFFF" stroke="#E5EAF0" strokeWidth="1.5" />
-                      <circle cx="20" cy="24" r="9" fill="#1686D9" fillOpacity="0.1" />
-                      <circle cx="20" cy="24" r="4" fill="#1686D9" />
-                      <text x="36" y="21" fill="#152D46" fontSize="10" fontWeight="700">Strategic Positioning</text>
-                      <text x="36" y="34" fill="#526477" fontSize="9">Targeted Direction</text>
-                    </g>
-
-                    {/* Node 4: Meaningful Opportunities (Bottom-Right) */}
-                    <g transform="translate(240, 205)">
-                      <rect width="120" height="48" rx="10" fill="#FFFFFF" stroke="#E5EAF0" strokeWidth="1.5" />
-                      <circle cx="20" cy="24" r="9" fill="#1269A8" fillOpacity="0.1" />
-                      <circle cx="20" cy="24" r="4" fill="#1269A8" />
-                      <text x="36" y="21" fill="#152D46" fontSize="10" fontWeight="700">Opportunity Network</text>
-                      <text x="36" y="34" fill="#526477" fontSize="9">Aligned Growth</text>
-                    </g>
-                  </svg>
-                </div>
-
-                {/* Bottom Ecosystem Status Pill */}
+                {/* Card Footer — updated stage labels */}
                 <div className="mt-4 pt-4 border-t border-[#E5EAF0] flex items-center justify-between text-xs text-[#526477]">
                   <div className="flex items-center gap-2">
-                    <Compass className="w-4 h-4 text-[#1269A8]" />
-                    <span className="font-medium">Direction &bull; Positioning &bull; Connection</span>
+                    <TrendingUp className="w-4 h-4 text-[#1269A8] shrink-0" />
+                    <span className="font-medium">
+                      Discover &bull; Position &bull; Connect &bull; Progress
+                    </span>
                   </div>
-                  <span className="font-semibold text-[#152D46]">Outcome-Oriented</span>
+                  <span className="font-semibold text-[#152D46] whitespace-nowrap ml-2">
+                    Outcome-Oriented
+                  </span>
                 </div>
               </div>
             </div>
@@ -247,5 +143,319 @@ export const Hero: React.FC = () => {
         </div>
       </div>
     </section>
+  );
+};
+
+/* ─────────────────────────────────────────────────────────────
+   CareerJourneyDiagram — isolated sub-component so the SVG
+   markup stays clean and self-contained.  Uses only the icon
+   set already imported above and the official Aagoi logo asset.
+───────────────────────────────────────────────────────────── */
+const CareerJourneyDiagram: React.FC = () => {
+  /* Node geometry — four corners of a balanced radial layout */
+  const W = 380;
+  const H = 290;
+  const cx = 190; // central x
+  const cy = 145; // central y
+
+  // Corner positions (node card top-left origin)
+  const TL = { x: 12,  y: 28  }; // 01 Discover   — top-left
+  const TR = { x: 248, y: 28  }; // 02 Position   — top-right
+  const BL = { x: 12,  y: 198 }; // 03 Connect    — bottom-left
+  const BR = { x: 248, y: 198 }; // 04 Progress   — bottom-right
+
+  // Node card dimensions
+  const NW = 120; // node width
+  const NH = 52;  // node height
+
+  // Edge midpoints of each node card (the connection attachment point)
+  const TLm = { x: TL.x + NW,     y: TL.y + NH / 2 }; // right edge
+  const TRm = { x: TR.x,          y: TR.y + NH / 2 }; // left edge
+  const BLm = { x: BL.x + NW,     y: BL.y + NH / 2 }; // right edge
+  const BRm = { x: BR.x,          y: BR.y + NH / 2 }; // left edge
+
+  // Central card edges
+  const centreL = cx - 44;
+  const centreR = cx + 44;
+  const centreT = cy - 44;
+  const centreB = cy + 44;
+
+  return (
+    <div className="relative w-full" style={{ height: '17rem' }}>
+      <svg
+        className="w-full h-full"
+        viewBox={`0 0 ${W} ${H}`}
+        fill="none"
+        aria-label="Aagoi Career Journey: four connected stages — Discover, Position, Connect, Progress — centred around the Aagoi ecosystem"
+      >
+        <defs>
+          {/* Journey progression gradient — left → right, Discover → Progress */}
+          <linearGradient id="cjGradL" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stopColor="#1686D9" />
+            <stop offset="100%" stopColor="#1269A8" />
+          </linearGradient>
+          <linearGradient id="cjGradR" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stopColor="#1269A8" />
+            <stop offset="100%" stopColor="#17A6A0" />
+          </linearGradient>
+          <linearGradient id="cjGradBL" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stopColor="#17A6A0" />
+            <stop offset="100%" stopColor="#1269A8" />
+          </linearGradient>
+          <linearGradient id="cjGradBR" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stopColor="#1269A8" />
+            <stop offset="100%" stopColor="#17A6A0" />
+          </linearGradient>
+          {/* Animated dash along TL→TR top connector (progression flow) */}
+          <linearGradient id="flowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stopColor="#1686D9" stopOpacity="0" />
+            <stop offset="45%" stopColor="#1686D9" stopOpacity="1" />
+            <stop offset="55%" stopColor="#17A6A0" stopOpacity="1" />
+            <stop offset="100%" stopColor="#17A6A0" stopOpacity="0" />
+          </linearGradient>
+        </defs>
+
+        {/* ── BACKGROUND GUIDE LINES (subtle dashed ghost) ── */}
+        <path
+          d={`M ${TLm.x} ${TLm.y} C ${cx - 60} ${TLm.y}, ${centreL} ${centreT + 10}, ${centreL} ${cy}`}
+          stroke="#E5EAF0" strokeWidth="1.5" strokeDasharray="5 4"
+        />
+        <path
+          d={`M ${TRm.x} ${TRm.y} C ${cx + 60} ${TRm.y}, ${centreR} ${centreT + 10}, ${centreR} ${cy}`}
+          stroke="#E5EAF0" strokeWidth="1.5" strokeDasharray="5 4"
+        />
+        <path
+          d={`M ${BLm.x} ${BLm.y} C ${cx - 60} ${BLm.y}, ${centreL} ${centreB - 10}, ${centreL} ${cy}`}
+          stroke="#E5EAF0" strokeWidth="1.5" strokeDasharray="5 4"
+        />
+        <path
+          d={`M ${BRm.x} ${BRm.y} C ${cx + 60} ${BRm.y}, ${centreR} ${centreB - 10}, ${centreR} ${cy}`}
+          stroke="#E5EAF0" strokeWidth="1.5" strokeDasharray="5 4"
+        />
+
+        {/* ── ACTIVE GRADIENT CONNECTION LINES ── */}
+        {/* TL (Discover) → Centre */}
+        <path
+          d={`M ${TLm.x} ${TLm.y} C ${cx - 55} ${TLm.y}, ${centreL} ${centreT + 12}, ${centreL} ${cy}`}
+          stroke="url(#cjGradL)" strokeWidth="2.5" strokeLinecap="round"
+        />
+        {/* TR (Position) → Centre */}
+        <path
+          d={`M ${TRm.x} ${TRm.y} C ${cx + 55} ${TRm.y}, ${centreR} ${centreT + 12}, ${centreR} ${cy}`}
+          stroke="url(#cjGradR)" strokeWidth="2.5" strokeLinecap="round"
+        />
+        {/* BL (Connect) → Centre */}
+        <path
+          d={`M ${BLm.x} ${BLm.y} C ${cx - 55} ${BLm.y}, ${centreL} ${centreB - 12}, ${centreL} ${cy}`}
+          stroke="url(#cjGradBL)" strokeWidth="2.5" strokeLinecap="round"
+        />
+        {/* BR (Progress) → Centre */}
+        <path
+          d={`M ${BRm.x} ${BRm.y} C ${cx + 55} ${BRm.y}, ${centreR} ${centreB - 12}, ${centreR} ${cy}`}
+          stroke="url(#cjGradBR)" strokeWidth="2.5" strokeLinecap="round"
+        />
+
+        {/* ── DIRECTIONAL SEQUENCE ARROWS (top arc: Discover→Position) ── */}
+        {/* Curved arc across the top showing sequential flow */}
+        <path
+          d={`M ${TL.x + NW / 2} ${TL.y - 4} C ${cx} ${TL.y - 18}, ${cx} ${TR.y - 18}, ${TR.x + NW / 2} ${TR.y - 4}`}
+          stroke="url(#flowGrad)" strokeWidth="1.5" strokeLinecap="round"
+        />
+        {/* Arrowhead at TR end */}
+        <polygon
+          points={`${TR.x + NW / 2 - 5},${TR.y - 10} ${TR.x + NW / 2 + 2},${TR.y - 5} ${TR.x + NW / 2 - 2},${TR.y - 2}`}
+          fill="#1686D9" opacity="0.7"
+        />
+
+        {/* Curved arc across the bottom showing sequential flow: Connect→Progress */}
+        <path
+          d={`M ${BL.x + NW / 2} ${BL.y + NH + 4} C ${cx} ${BL.y + NH + 18}, ${cx} ${BR.y + NH + 18}, ${BR.x + NW / 2} ${BR.y + NH + 4}`}
+          stroke="url(#flowGrad)" strokeWidth="1.5" strokeLinecap="round"
+        />
+        {/* Arrowhead at BR end */}
+        <polygon
+          points={`${BR.x + NW / 2 - 5},${BR.y + NH + 10} ${BR.x + NW / 2 + 2},${BR.y + NH + 5} ${BR.x + NW / 2 - 2},${BR.y + NH + 2}`}
+          fill="#17A6A0" opacity="0.7"
+        />
+
+        {/* ── STAGE 01 — DISCOVER (top-left) ── */}
+        <StageNode
+          x={TL.x} y={TL.y} w={NW} h={NH}
+          num="01"
+          accentColor="#1686D9"
+          ringColor="#1686D9"
+          Icon={CompassIcon}
+          title="Discover"
+          sub="Experience, Skills & Goals"
+        />
+
+        {/* ── STAGE 02 — POSITION (top-right) ── */}
+        <StageNode
+          x={TR.x} y={TR.y} w={NW} h={NH}
+          num="02"
+          accentColor="#1269A8"
+          ringColor="#1269A8"
+          Icon={TargetIcon}
+          title="Position"
+          sub="Intelligent Positioning"
+        />
+
+        {/* ── STAGE 03 — CONNECT (bottom-left) ── */}
+        <StageNode
+          x={BL.x} y={BL.y} w={NW} h={NH}
+          num="03"
+          accentColor="#17A6A0"
+          ringColor="#17A6A0"
+          Icon={UsersIcon}
+          title="Connect"
+          sub="Opportunities & Guidance"
+        />
+
+        {/* ── STAGE 04 — PROGRESS (bottom-right) ── */}
+        <StageNode
+          x={BR.x} y={BR.y} w={NW} h={NH}
+          num="04"
+          accentColor="#1269A8"
+          ringColor="#17A6A0"
+          Icon={TrendingUpIcon}
+          title="Progress"
+          sub="Clarity & Career Growth"
+        />
+
+        {/* ── CENTRAL CARD — Official Aagoi Logo ── */}
+        {/* Navy card background */}
+        <rect
+          x={cx - 46} y={cy - 46}
+          width={92} height={92}
+          rx={16}
+          fill="#152D46"
+          filter="drop-shadow(0 8px 20px rgba(21,45,70,0.30))"
+        />
+        {/* Dashed orbit ring */}
+        <circle
+          cx={cx} cy={cy} r={36}
+          stroke="#1686D9" strokeWidth="1.2"
+          strokeDasharray="4 4"
+          opacity="0.5"
+        />
+        {/* Official Aagoi logo — white variant for navy background */}
+        <image
+          href="/aagoi-logo-white.png"
+          x={cx - 34} y={cy - 16}
+          width={68} height={26}
+          preserveAspectRatio="xMidYMid meet"
+        />
+        {/* "Aagoi Core" supporting label */}
+        <text
+          x={cx} y={cy + 30}
+          textAnchor="middle"
+          fill="#94A3B8"
+          fontSize="7"
+          fontWeight="600"
+          letterSpacing="0.8"
+        >
+          AAGOI CORE
+        </text>
+      </svg>
+    </div>
+  );
+};
+
+/* ── Inline SVG icon drawers (re-use same stroke weight as Lucide) ── */
+const CompassIcon = ({ cx, cy }: { cx: number; cy: number }) => (
+  <g transform={`translate(${cx - 7}, ${cy - 7})`}>
+    <circle cx="7" cy="7" r="6" stroke="currentColor" strokeWidth="1.6" fill="none" />
+    <path d="M 9.5 4.5 L 7.5 7 L 4.5 9.5 L 6.5 7 Z" stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round" fill="currentColor" fillOpacity="0.3" />
+    <circle cx="7" cy="7" r="1.2" fill="currentColor" />
+  </g>
+);
+const TargetIcon = ({ cx, cy }: { cx: number; cy: number }) => (
+  <g transform={`translate(${cx - 7}, ${cy - 7})`}>
+    <circle cx="7" cy="7" r="6" stroke="currentColor" strokeWidth="1.6" fill="none" />
+    <circle cx="7" cy="7" r="3.5" stroke="currentColor" strokeWidth="1.4" fill="none" />
+    <circle cx="7" cy="7" r="1.2" fill="currentColor" />
+  </g>
+);
+const UsersIcon = ({ cx, cy }: { cx: number; cy: number }) => (
+  <g transform={`translate(${cx - 7}, ${cy - 7})`}>
+    <circle cx="5" cy="4.5" r="2.2" stroke="currentColor" strokeWidth="1.4" fill="none" />
+    <path d="M 1.5 12 C 1.5 9.5 3 8 5 8 C 7 8 8.5 9.5 8.5 12" stroke="currentColor" strokeWidth="1.4" fill="none" strokeLinecap="round" />
+    <circle cx="9.5" cy="4.5" r="2.2" stroke="currentColor" strokeWidth="1.4" fill="none" />
+    <path d="M 8 12 C 8 10 9 8.5 11 8.5" stroke="currentColor" strokeWidth="1.4" fill="none" strokeLinecap="round" />
+  </g>
+);
+const TrendingUpIcon = ({ cx, cy }: { cx: number; cy: number }) => (
+  <g transform={`translate(${cx - 7}, ${cy - 7})`}>
+    <polyline points="1,10 5,6 8,8.5 13,3" stroke="currentColor" strokeWidth="1.6" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+    <polyline points="9,3 13,3 13,7" stroke="currentColor" strokeWidth="1.6" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+  </g>
+);
+
+/* ── StageNode — renders a single stage card inside the SVG ── */
+interface StageNodeProps {
+  x: number; y: number; w: number; h: number;
+  num: string;
+  accentColor: string;
+  ringColor: string;
+  Icon: React.FC<{ cx: number; cy: number }>;
+  title: string;
+  sub: string;
+}
+const StageNode: React.FC<StageNodeProps> = ({
+  x, y, w, h, num, accentColor, Icon, title, sub,
+}) => {
+  const iconCx = x + 20;
+  const iconCy = y + h / 2;
+  return (
+    <g>
+      {/* Card background */}
+      <rect
+        x={x} y={y} width={w} height={h}
+        rx={10}
+        fill="#FFFFFF"
+        stroke="#E5EAF0"
+        strokeWidth="1.5"
+      />
+      {/* Coloured left accent bar */}
+      <rect
+        x={x} y={y + 8} width={3} height={h - 16}
+        rx={1.5}
+        fill={accentColor}
+        opacity="0.7"
+      />
+      {/* Icon circle */}
+      <circle cx={iconCx} cy={iconCy} r={12} fill={accentColor} fillOpacity="0.1" />
+      <g color={accentColor}>
+        <Icon cx={iconCx} cy={iconCy} />
+      </g>
+      {/* Stage number */}
+      <text
+        x={x + 38} y={y + 15}
+        fill={accentColor}
+        fontSize="7.5"
+        fontWeight="800"
+        letterSpacing="0.5"
+        opacity="0.8"
+      >
+        {num}
+      </text>
+      {/* Title */}
+      <text
+        x={x + 38} y={y + 27}
+        fill="#152D46"
+        fontSize="10.5"
+        fontWeight="700"
+      >
+        {title}
+      </text>
+      {/* Sub-label */}
+      <text
+        x={x + 38} y={y + 40}
+        fill="#526477"
+        fontSize="8.5"
+      >
+        {sub}
+      </text>
+    </g>
   );
 };
