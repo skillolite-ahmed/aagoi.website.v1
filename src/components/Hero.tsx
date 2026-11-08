@@ -14,23 +14,22 @@ export const Hero: React.FC = () => {
   return (
     <section
       id="home"
-      className="relative scroll-mt-28 pt-40 pb-16 sm:pt-44 sm:pb-20 lg:pt-48 lg:pb-24 overflow-hidden bg-gradient-to-b from-white via-[#F7F9FC] to-[#F7F9FC]"
+      className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden bg-gradient-to-b from-white via-[#F7F9FC] to-[#F7F9FC]"
     >
-      {/* Subtle background technology pattern */}
+      {/* Existing subtle background pattern */}
       <div
         aria-hidden="true"
-        className="absolute inset-0 pointer-events-none opacity-[0.035]"
+        className="absolute inset-0 pointer-events-none opacity-[0.04]"
         style={{
-          backgroundImage:
-            'radial-gradient(#152D46 1px, transparent 1px)',
+          backgroundImage: 'radial-gradient(#152D46 1px, transparent 1px)',
           backgroundSize: '24px 24px',
         }}
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
 
-          {/* LEFT: BRAND POSITIONING */}
+          {/* LEFT COLUMN — EXISTING HERO CONTENT */}
           <div className="lg:col-span-7 space-y-6 text-left">
 
             {/* Status badges */}
@@ -53,40 +52,42 @@ export const Hero: React.FC = () => {
               </span>
             </h1>
 
-            {/* Supporting description */}
+            {/* Supporting paragraph */}
             <p className="text-lg sm:text-xl text-[#526477] leading-relaxed max-w-2xl font-normal">
-              Aagoi brings together AI-powered solutions, practical technology
-              and personalised human assistance to help experienced
-              professionals navigate their next career move with greater
-              clarity, structure and confidence.
+              Aagoi brings together AI-powered solutions, practical technology and
+              personalised human assistance to help experienced professionals navigate
+              their next career move with greater clarity, structure and confidence.
             </p>
 
-            {/* Brand pillars */}
+            {/* Supporting pillars */}
             <div className="pt-2 flex flex-wrap gap-3">
-              <div className="flex items-center gap-2 px-3.5 py-2 rounded-lg bg-white border border-[#E5EAF0] shadow-sm">
+
+              <div className="flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-white border border-[#E5EAF0] shadow-2xs">
                 <Sparkles className="w-4 h-4 text-[#1686D9]" />
                 <span className="text-xs sm:text-sm font-semibold text-[#152D46]">
                   AI-Powered Solutions
                 </span>
               </div>
 
-              <div className="flex items-center gap-2 px-3.5 py-2 rounded-lg bg-white border border-[#E5EAF0] shadow-sm">
+              <div className="flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-white border border-[#E5EAF0] shadow-2xs">
                 <Users className="w-4 h-4 text-[#17A6A0]" />
                 <span className="text-xs sm:text-sm font-semibold text-[#152D46]">
                   Human-Centred Support
                 </span>
               </div>
 
-              <div className="flex items-center gap-2 px-3.5 py-2 rounded-lg bg-white border border-[#E5EAF0] shadow-sm">
+              <div className="flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-white border border-[#E5EAF0] shadow-2xs">
                 <Network className="w-4 h-4 text-[#1269A8]" />
                 <span className="text-xs sm:text-sm font-semibold text-[#152D46]">
                   Connected Career Ecosystem
                 </span>
               </div>
+
             </div>
 
-            {/* Call-to-action buttons */}
+            {/* CTA buttons */}
             <div className="pt-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+
               <a
                 href={siteConfig.forms.client}
                 target="_blank"
@@ -104,48 +105,52 @@ export const Hero: React.FC = () => {
                 <span>Explore Aagoi</span>
                 <ArrowDown className="w-4 h-4 text-[#526477]" />
               </a>
+
             </div>
 
             {/* Supporting note */}
             <p className="text-xs sm:text-sm text-[#526477] pt-1">
               Be among the first to explore what we&apos;re building.
             </p>
+
           </div>
 
-          {/* RIGHT: CAREER JOURNEY ILLUSTRATION */}
+          {/* RIGHT COLUMN — CAREER JOURNEY */}
           <div className="lg:col-span-5 relative">
-            <div className="relative mx-auto w-full max-w-[560px] lg:max-w-none">
 
-              {/* Subtle background glow */}
+            <div className="relative mx-auto max-w-md lg:max-w-none">
+
+              {/* Subtle existing glow */}
               <div
                 aria-hidden="true"
-                className="absolute -inset-2 bg-gradient-to-tr from-[#1269A8]/10 via-[#17A6A0]/10 to-[#1686D9]/15 rounded-3xl blur-2xl"
+                className="absolute -inset-2 bg-gradient-to-tr from-[#1269A8]/10 via-[#17A6A0]/10 to-[#1686D9]/15 rounded-3xl blur-2xl -z-10"
               />
 
-              {/* Main illustration card */}
-              <div className="relative bg-white rounded-2xl border border-[#E5EAF0] p-4 sm:p-6 shadow-xl">
+              {/* Illustration card — original styling preserved */}
+              <div className="bg-white/95 rounded-2xl border border-[#E5EAF0] p-6 shadow-xl relative overflow-hidden backdrop-blur-sm">
 
-                {/* Card header */}
-                <div className="flex items-center justify-between gap-3 pb-4 border-b border-[#E5EAF0] mb-3">
+                {/* Header */}
+                <div className="flex items-center justify-between pb-4 border-b border-[#E5EAF0] mb-4">
 
-                  <div className="flex items-center gap-2 min-w-0">
-                    <span className="w-3 h-3 rounded-full bg-[#1269A8] shrink-0" />
+                  <div className="flex items-center gap-2">
+                    <span className="w-3 h-3 rounded-full bg-[#1269A8]" />
 
-                    <span className="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-[#152D46]">
+                    <span className="text-xs font-bold uppercase tracking-wider text-[#152D46]">
                       The Aagoi Career Journey
                     </span>
                   </div>
 
-                  <span className="text-[10px] sm:text-[11px] font-semibold text-[#17A6A0] bg-[#17A6A0]/10 px-2.5 py-1 rounded-full whitespace-nowrap">
+                  <span className="text-[11px] font-semibold text-[#17A6A0] bg-[#17A6A0]/10 px-2.5 py-0.5 rounded-full whitespace-nowrap">
                     Aagoi Ecosystem
                   </span>
+
                 </div>
 
-                {/* Career journey diagram */}
+                {/* Compact career journey diagram */}
                 <CareerJourneyDiagram />
 
-                {/* Card footer */}
-                <div className="mt-3 pt-4 border-t border-[#E5EAF0] flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs sm:text-sm text-[#526477]">
+                {/* Footer */}
+                <div className="mt-4 pt-4 border-t border-[#E5EAF0] flex items-center justify-between text-xs text-[#526477]">
 
                   <div className="flex items-center gap-2 min-w-0">
                     <TrendingUp className="w-4 h-4 text-[#1269A8] shrink-0" />
@@ -155,10 +160,12 @@ export const Hero: React.FC = () => {
                     </span>
                   </div>
 
-                  <span className="font-semibold text-[#152D46] whitespace-nowrap">
+                  <span className="font-semibold text-[#152D46] whitespace-nowrap ml-2">
                     Outcome-Oriented
                   </span>
+
                 </div>
+
               </div>
             </div>
           </div>
@@ -173,61 +180,61 @@ export const Hero: React.FC = () => {
 /* ============================================================
    AAGOI CAREER JOURNEY DIAGRAM
 
-   Journey sequence, clockwise:
+   Compact SVG dimensions: 440 x 300
+   Clockwise journey:
 
-   01 Discover  →  02 Position
+   01 Discover → 02 Position
                          ↓
-   04 Progress  ←  03 Connect
+   04 Progress ← 03 Connect
 
-   The official Aagoi logo remains at the centre.
+   Official Aagoi logo at the centre.
 ============================================================ */
 
 const CareerJourneyDiagram: React.FC = () => {
 
-  const W = 520;
-  const H = 360;
+  const W = 440;
+  const H = 300;
 
-  const cx = 260;
-  const cy = 180;
+  const cx = 220;
+  const cy = 150;
 
-  const NW = 190;
-  const NH = 68;
+  const NW = 154;
+  const NH = 64;
 
   // Clockwise stage positions
   const stages = {
-    discover: { x: 12, y: 48 },
-    position: { x: 318, y: 48 },
-    connect: { x: 318, y: 244 },
-    progress: { x: 12, y: 244 },
+    discover: { x: 6, y: 35 },
+    position: { x: 280, y: 35 },
+    connect: { x: 280, y: 201 },
+    progress: { x: 6, y: 201 },
   };
 
-  const central = {
-    x: cx - 52,
-    y: cy - 52,
-    width: 104,
-    height: 104,
-  };
+  // Central card
+  const CW = 80;
+  const CH = 80;
 
-  const leftEdge = central.x;
-  const rightEdge = central.x + central.width;
-  const topEdge = central.y;
-  const bottomEdge = central.y + central.height;
+  const centreLeft = cx - CW / 2;
+  const centreRight = cx + CW / 2;
+  const centreTop = cy - CH / 2;
+  const centreBottom = cy + CH / 2;
 
   return (
-    <div className="w-full">
+    <div className="w-full max-w-[390px] mx-auto">
+
       <svg
         viewBox={`0 0 ${W} ${H}`}
         className="block w-full h-auto"
         role="img"
-        aria-labelledby="career-diagram-title career-diagram-description"
+        aria-labelledby="career-title career-description"
       >
-        <title id="career-diagram-title">
+
+        <title id="career-title">
           The Aagoi Career Journey
         </title>
 
-        <desc id="career-diagram-description">
-          Four connected career stages arranged clockwise around the
-          official Aagoi logo: Discover, Position, Connect and Progress.
+        <desc id="career-description">
+          Four connected stages arranged clockwise around the official Aagoi
+          logo: Discover, Position, Connect and Progress.
         </desc>
 
         <defs>
@@ -237,24 +244,24 @@ const CareerJourneyDiagram: React.FC = () => {
             <stop offset="100%" stopColor="#17A6A0" />
           </linearGradient>
 
-          <linearGradient id="aagoi-top-gradient">
+          <linearGradient id="aagoi-top-gradient" x1="0" y1="0" x2="1" y2="0">
             <stop offset="0%" stopColor="#1686D9" />
             <stop offset="100%" stopColor="#17A6A0" />
           </linearGradient>
 
           <marker
-            id="aagoi-arrow"
-            markerWidth="7"
-            markerHeight="7"
+            id="aagoi-journey-arrow"
+            markerWidth="6"
+            markerHeight="6"
             refX="5"
-            refY="3.5"
+            refY="3"
             orient="auto"
           >
             <path
-              d="M0 0 L7 3.5 L0 7"
+              d="M0 0 L6 3 L0 6"
               fill="none"
               stroke="#17A6A0"
-              strokeWidth="1.2"
+              strokeWidth="1"
               strokeLinecap="round"
               strokeLinejoin="round"
             />
@@ -262,93 +269,94 @@ const CareerJourneyDiagram: React.FC = () => {
 
         </defs>
 
-        {/* =========================================
-            OUTER CLOCKWISE JOURNEY PATH
-        ========================================= */}
+
+        {/* ======================================
+            SUBTLE CLOCKWISE JOURNEY INDICATORS
+        ====================================== */}
 
         {/* Discover → Position */}
         <path
-          d="M205 29 C245 12 275 12 315 29"
+          d="M165 20 C200 8 240 8 275 20"
           stroke="url(#aagoi-top-gradient)"
-          strokeWidth="1.7"
+          strokeWidth="1.4"
           strokeLinecap="round"
           fill="none"
-          markerEnd="url(#aagoi-arrow)"
-          opacity="0.85"
+          markerEnd="url(#aagoi-journey-arrow)"
+          opacity="0.65"
         />
 
         {/* Position → Connect */}
         <path
-          d="M515 125 C526 160 526 200 515 235"
-          stroke="url(#aagoi-journey-gradient)"
-          strokeWidth="1.7"
+          d="M436 108 C439 130 439 170 436 192"
+          stroke="#1269A8"
+          strokeWidth="1.3"
           strokeLinecap="round"
           fill="none"
-          markerEnd="url(#aagoi-arrow)"
-          opacity="0.85"
+          markerEnd="url(#aagoi-journey-arrow)"
+          opacity="0.55"
         />
 
         {/* Connect → Progress */}
         <path
-          d="M315 331 C275 348 245 348 205 331"
-          stroke="url(#aagoi-journey-gradient)"
-          strokeWidth="1.7"
+          d="M275 280 C240 292 200 292 165 280"
+          stroke="url(#aagoi-top-gradient)"
+          strokeWidth="1.4"
           strokeLinecap="round"
           fill="none"
-          markerEnd="url(#aagoi-arrow)"
-          opacity="0.85"
+          markerEnd="url(#aagoi-journey-arrow)"
+          opacity="0.65"
         />
 
         {/* Progress → Discover */}
         <path
-          d="M5 235 C-4 200 -4 160 5 125"
-          stroke="url(#aagoi-journey-gradient)"
-          strokeWidth="1.7"
+          d="M4 192 C1 170 1 130 4 108"
+          stroke="#1269A8"
+          strokeWidth="1.3"
           strokeLinecap="round"
           fill="none"
-          markerEnd="url(#aagoi-arrow)"
-          opacity="0.85"
+          markerEnd="url(#aagoi-journey-arrow)"
+          opacity="0.55"
         />
 
-        {/* =========================================
-            CENTRAL CONNECTIONS
-            Rendered behind the stage nodes and logo.
-        ========================================= */}
+
+        {/* ======================================
+            CONNECTING LINES TO AAGOI CORE
+        ====================================== */}
 
         <g
           stroke="url(#aagoi-journey-gradient)"
-          strokeWidth="2.4"
+          strokeWidth="2"
           strokeLinecap="round"
           fill="none"
         >
 
-          {/* Discover → Aagoi Core */}
+          {/* Discover */}
           <path
-            d={`M202 82 C224 82 ${leftEdge} 120 ${leftEdge} ${topEdge + 27}`}
+            d={`M160 67 C174 67 166 112 ${centreLeft} ${centreTop + 18}`}
           />
 
-          {/* Position → Aagoi Core */}
+          {/* Position */}
           <path
-            d={`M318 82 C296 82 ${rightEdge} 120 ${rightEdge} ${topEdge + 27}`}
+            d={`M280 67 C266 67 274 112 ${centreRight} ${centreTop + 18}`}
           />
 
-          {/* Connect → Aagoi Core */}
+          {/* Connect */}
           <path
-            d={`M318 278 C296 278 ${rightEdge} 240 ${rightEdge} ${bottomEdge - 27}`}
+            d={`M280 233 C266 233 274 188 ${centreRight} ${centreBottom - 18}`}
           />
 
-          {/* Progress → Aagoi Core */}
+          {/* Progress */}
           <path
-            d={`M202 278 C224 278 ${leftEdge} 240 ${leftEdge} ${bottomEdge - 27}`}
+            d={`M160 233 C174 233 166 188 ${centreLeft} ${centreBottom - 18}`}
           />
 
         </g>
 
-        {/* =========================================
-            FOUR JOURNEY STAGES
-        ========================================= */}
 
-        {/* 01 DISCOVER */}
+        {/* ======================================
+            STAGE 01 — DISCOVER
+        ====================================== */}
+
         <StageNode
           x={stages.discover.x}
           y={stages.discover.y}
@@ -358,10 +366,15 @@ const CareerJourneyDiagram: React.FC = () => {
           accentColor="#1686D9"
           Icon={CompassIcon}
           title="Discover"
-          sub="Experience, Skills & Goals"
+          line1="Experience, Skills"
+          line2="Goals"
         />
 
-        {/* 02 POSITION */}
+
+        {/* ======================================
+            STAGE 02 — POSITION
+        ====================================== */}
+
         <StageNode
           x={stages.position.x}
           y={stages.position.y}
@@ -371,10 +384,15 @@ const CareerJourneyDiagram: React.FC = () => {
           accentColor="#1269A8"
           Icon={TargetIcon}
           title="Position"
-          sub="Intelligent Career Positioning"
+          line1="Career Direction"
+          line2="Professional Profile"
         />
 
-        {/* 03 CONNECT — bottom-right */}
+
+        {/* ======================================
+            STAGE 03 — CONNECT
+        ====================================== */}
+
         <StageNode
           x={stages.connect.x}
           y={stages.connect.y}
@@ -384,10 +402,15 @@ const CareerJourneyDiagram: React.FC = () => {
           accentColor="#17A6A0"
           Icon={UsersIcon}
           title="Connect"
-          sub="Opportunities & Human Guidance"
+          line1="Opportunities &"
+          line2="Human Guidance"
         />
 
-        {/* 04 PROGRESS — bottom-left */}
+
+        {/* ======================================
+            STAGE 04 — PROGRESS
+        ====================================== */}
+
         <StageNode
           x={stages.progress.x}
           y={stages.progress.y}
@@ -397,46 +420,48 @@ const CareerJourneyDiagram: React.FC = () => {
           accentColor="#1269A8"
           Icon={TrendingUpIcon}
           title="Progress"
-          sub="Clarity & Career Growth"
+          line1="Clarity & Direction"
+          line2="Career Growth"
         />
 
-        {/* =========================================
+
+        {/* ======================================
             CENTRAL AAGOI BRAND ELEMENT
-        ========================================= */}
+        ====================================== */}
 
         <rect
-          x={central.x}
-          y={central.y}
-          width={central.width}
-          height={central.height}
-          rx="18"
+          x={centreLeft}
+          y={centreTop}
+          width={CW}
+          height={CH}
+          rx="16"
           fill="#152D46"
           stroke="#264866"
           strokeWidth="1"
           style={{
-            filter: 'drop-shadow(0px 7px 12px rgba(21,45,70,0.20))',
+            filter: 'drop-shadow(0px 6px 10px rgba(21,45,70,0.20))',
           }}
         />
 
-        {/* Official Aagoi logo asset */}
+        {/* Original official Aagoi logo */}
         <image
           href="/aagoi-logo-white.png"
-          x={cx - 40}
-          y={cy - 22}
-          width="80"
-          height="32"
+          x={cx - 36}
+          y={cy - 20}
+          width="72"
+          height="29"
           preserveAspectRatio="xMidYMid meet"
         />
 
-        {/* Supporting brand label */}
+        {/* Supporting label */}
         <text
           x={cx}
-          y={cy + 29}
+          y={cy + 26}
           textAnchor="middle"
           fill="#B9C9D9"
-          fontSize="9"
+          fontSize="8"
           fontWeight="600"
-          letterSpacing="1"
+          letterSpacing="0.8"
         >
           AAGOI CORE
         </text>
@@ -451,17 +476,17 @@ const CareerJourneyDiagram: React.FC = () => {
    SVG ICONS
 ============================================================ */
 
-type SVGIconProps = {
+interface SVGIconProps {
   cx: number;
   cy: number;
-};
+}
 
 const CompassIcon: React.FC<SVGIconProps> = ({ cx, cy }) => (
   <g
     transform={`translate(${cx - 8}, ${cy - 8})`}
     fill="none"
     stroke="currentColor"
-    strokeWidth="1.7"
+    strokeWidth="1.6"
     strokeLinecap="round"
     strokeLinejoin="round"
   >
@@ -470,18 +495,20 @@ const CompassIcon: React.FC<SVGIconProps> = ({ cx, cy }) => (
   </g>
 );
 
+
 const TargetIcon: React.FC<SVGIconProps> = ({ cx, cy }) => (
   <g
     transform={`translate(${cx - 8}, ${cy - 8})`}
     fill="none"
     stroke="currentColor"
-    strokeWidth="1.7"
+    strokeWidth="1.6"
   >
     <circle cx="8" cy="8" r="6.5" />
     <circle cx="8" cy="8" r="3.5" />
     <circle cx="8" cy="8" r="1" fill="currentColor" />
   </g>
 );
+
 
 const UsersIcon: React.FC<SVGIconProps> = ({ cx, cy }) => (
   <g
@@ -499,12 +526,13 @@ const UsersIcon: React.FC<SVGIconProps> = ({ cx, cy }) => (
   </g>
 );
 
+
 const TrendingUpIcon: React.FC<SVGIconProps> = ({ cx, cy }) => (
   <g
     transform={`translate(${cx - 8}, ${cy - 8})`}
     fill="none"
     stroke="currentColor"
-    strokeWidth="1.8"
+    strokeWidth="1.7"
     strokeLinecap="round"
     strokeLinejoin="round"
   >
@@ -516,6 +544,9 @@ const TrendingUpIcon: React.FC<SVGIconProps> = ({ cx, cy }) => (
 
 /* ============================================================
    STAGE NODE COMPONENT
+
+   Each description uses two explicitly positioned lines.
+   This prevents clipping and keeps all four cards aligned.
 ============================================================ */
 
 interface StageNodeProps {
@@ -527,7 +558,8 @@ interface StageNodeProps {
   accentColor: string;
   Icon: React.FC<SVGIconProps>;
   title: string;
-  sub: string;
+  line1: string;
+  line2: string;
 }
 
 const StageNode: React.FC<StageNodeProps> = ({
@@ -539,42 +571,46 @@ const StageNode: React.FC<StageNodeProps> = ({
   accentColor,
   Icon,
   title,
-  sub,
+  line1,
+  line2,
 }) => {
 
-  const iconCx = x + 24;
+  const iconCx = x + 23;
   const iconCy = y + h / 2;
+
+  const textX = x + 43;
 
   return (
     <g>
 
-      {/* Card background */}
+      {/* Node background */}
       <rect
         x={x}
         y={y}
         width={w}
         height={h}
-        rx="11"
+        rx="10"
         fill="#FFFFFF"
         stroke="#E5EAF0"
-        strokeWidth="1.6"
+        strokeWidth="1.5"
       />
 
-      {/* Left accent indicator */}
+      {/* Left accent bar */}
       <rect
         x={x}
-        y={y + 10}
+        y={y + 9}
         width="3"
-        height={h - 20}
+        height={h - 18}
         rx="1.5"
         fill={accentColor}
+        opacity="0.75"
       />
 
       {/* Icon background */}
       <circle
         cx={iconCx}
         cy={iconCy}
-        r="14"
+        r="13"
         fill={accentColor}
         fillOpacity="0.10"
       />
@@ -586,36 +622,47 @@ const StageNode: React.FC<StageNodeProps> = ({
 
       {/* Stage number */}
       <text
-        x={x + 48}
-        y={y + 19}
+        x={textX}
+        y={y + 15}
         fill={accentColor}
-        fontSize="10"
+        fontSize="9"
         fontWeight="800"
-        letterSpacing="0.7"
+        letterSpacing="0.6"
       >
         {num}
       </text>
 
       {/* Stage title */}
       <text
-        x={x + 48}
-        y={y + 35}
+        x={textX}
+        y={y + 30}
         fill="#152D46"
-        fontSize="13"
+        fontSize="11.5"
         fontWeight="700"
       >
         {title}
       </text>
 
-      {/* Stage description */}
+      {/* Supporting line one */}
       <text
-        x={x + 48}
-        y={y + 51}
+        x={textX}
+        y={y + 44}
         fill="#526477"
-        fontSize="10.5"
+        fontSize="9.5"
         fontWeight="400"
       >
-        {sub}
+        {line1}
+      </text>
+
+      {/* Supporting line two */}
+      <text
+        x={textX}
+        y={y + 56}
+        fill="#526477"
+        fontSize="9.5"
+        fontWeight="400"
+      >
+        {line2}
       </text>
 
     </g>
