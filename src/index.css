@@ -36,6 +36,19 @@ h1, h2, h3, h4, h5, h6 {
   color: #FFFFFF;
 }
 
+/* Keep the fixed navbar clear while reducing excess hero whitespace on larger screens. */
+@media (min-width: 768px) {
+  #home {
+    padding-top: 8.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  #home {
+    padding-top: 9rem;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
