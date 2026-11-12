@@ -18,9 +18,9 @@ export const About: React.FC = () => {
             stronger professional positioning, meaningful connections and a structured approach.
           </p>
           <p className="text-base sm:text-lg text-[#526477] leading-relaxed">
-            Aagoi is building an integrated career technology ecosystem that brings intelligence,
-            practical solutions and personalised human assistance together to create a more
-            organised career journey.
+            Aagoi is an early-stage career technology and support initiative that brings intelligent tools,
+            practical solutions and personalised human guidance together to help experienced professionals
+            make better-informed career decisions and navigate their next move.
           </p>
         </div>
 

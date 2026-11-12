@@ -2,12 +2,12 @@ import React from 'react';
 import {
   ArrowUpRight,
   ArrowDown,
-  Sparkles,
-  Network,
   Users,
   TrendingUp,
   BrainCircuit,
   Building2,
+  CheckCircle2,
+  ShieldCheck,
 } from 'lucide-react';
 import { siteConfig } from '../config/site';
 
@@ -29,7 +29,7 @@ export const Hero: React.FC = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
-          {/* LEFT COLUMN — EXISTING HERO CONTENT */}
+          {/* LEFT COLUMN — APPROVED AAGOI WEBSITE MESSAGING */}
           <div className="lg:col-span-7 space-y-6 text-left">
             {/* Status badges */}
             <div className="inline-flex flex-wrap items-center gap-2.5">
@@ -53,31 +53,29 @@ export const Hero: React.FC = () => {
 
             {/* Supporting paragraph */}
             <p className="text-lg sm:text-xl text-[#526477] leading-relaxed max-w-2xl font-normal">
-              Aagoi brings together AI-powered solutions, practical technology and
-              personalised human assistance to help experienced professionals navigate
-              their next career move with greater clarity, structure and confidence.
+              Aagoi brings together intelligent career technology and personalised human support to help experienced professionals navigate their next career move with greater clarity, direction and confidence.
             </p>
 
-            {/* Supporting pillars */}
+            {/* Supporting eligibility & payment indicators */}
             <div className="pt-2 flex flex-wrap gap-3">
               <div className="flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-white border border-[#E5EAF0] shadow-2xs">
-                <Sparkles className="w-4 h-4 text-[#1686D9]" />
+                <CheckCircle2 className="w-4 h-4 text-[#1269A8]" />
                 <span className="text-xs sm:text-sm font-semibold text-[#152D46]">
-                  AI-Powered Solutions
+                  For professionals with 5+ years of experience
                 </span>
               </div>
 
               <div className="flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-white border border-[#E5EAF0] shadow-2xs">
-                <Users className="w-4 h-4 text-[#17A6A0]" />
+                <ShieldCheck className="w-4 h-4 text-[#17A6A0]" />
                 <span className="text-xs sm:text-sm font-semibold text-[#152D46]">
-                  Human-Centred Support
+                  No upfront payment to begin
                 </span>
               </div>
 
               <div className="flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-white border border-[#E5EAF0] shadow-2xs">
-                <Network className="w-4 h-4 text-[#1269A8]" />
+                <Users className="w-4 h-4 text-[#1686D9]" />
                 <span className="text-xs sm:text-sm font-semibold text-[#152D46]">
-                  Connected Career Ecosystem
+                  Personalised human support
                 </span>
               </div>
             </div>
@@ -90,7 +88,7 @@ export const Hero: React.FC = () => {
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 bg-[#1269A8] hover:bg-[#1686D9] text-white text-base font-semibold px-7 py-3.5 rounded-xl shadow-md hover:shadow-lg transition-all duration-200 group focus:outline-none focus:ring-2 focus:ring-[#1269A8] focus:ring-offset-2"
               >
-                <span>Request Early Access</span>
+                <span>Explore Early Access</span>
                 <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
               </a>
 
@@ -105,7 +103,7 @@ export const Hero: React.FC = () => {
 
             {/* Supporting note */}
             <p className="text-xs sm:text-sm text-[#526477] pt-1">
-              Be among the first to explore what we&apos;re building.
+              Be among the first to explore what we&apos;re building. Designed for experienced professionals.
             </p>
           </div>
 

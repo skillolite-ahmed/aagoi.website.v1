@@ -1,5 +1,5 @@
 import React from 'react';
-import { Briefcase, TrendingUp, RefreshCw, Globe, CheckCircle2 } from 'lucide-react';
+import { Briefcase, TrendingUp, RefreshCw, Globe, CheckCircle2, Clock } from 'lucide-react';
 
 export const Audience: React.FC = () => {
   const categories = [
@@ -10,7 +10,7 @@ export const Audience: React.FC = () => {
         'Experienced individuals seeking intentional upward mobility, greater scope, or breaking through mid-career plateaus into higher-impact roles.',
       icon: TrendingUp,
       traits: [
-        '5+ years of verified industry experience',
+        '5+ years of verified professional experience',
         'Seeking strategic career progression',
         'Desire for structured market positioning',
       ],
@@ -22,7 +22,7 @@ export const Audience: React.FC = () => {
         'Functional heads, lead architects, and senior practitioners navigating high-stakes career transitions where alignment, culture, and discretion matter most.',
       icon: Briefcase,
       traits: [
-        'Deep domain mastery and leadership track record',
+        'Extensive domain mastery & track record',
         'High-discretion executive transitions',
         'Alignment with organizational vision',
       ],
@@ -53,8 +53,7 @@ export const Audience: React.FC = () => {
             Built Around Your Career Experience.
           </h2>
           <p className="text-lg text-[#526477] leading-relaxed">
-            We focus our personalised career assistance on experienced professionals looking
-            for meaningful opportunities, professional growth or their next career transition.
+            Our personalised career assistance is designed specifically for experienced professionals with <strong className="text-[#152D46]">at least 5 years of total work experience</strong> who are considering their next career move.
           </p>
         </div>
 
@@ -95,8 +94,39 @@ export const Audience: React.FC = () => {
           })}
         </div>
 
+        {/* Key Service Criteria & Flexible Commitment Banner */}
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="bg-[#F7F9FC] border border-[#E5EAF0] rounded-2xl p-6 sm:p-7 flex items-start gap-4">
+            <div className="w-10 h-10 rounded-xl bg-[#1269A8]/10 text-[#1269A8] flex items-center justify-center shrink-0 mt-0.5">
+              <Briefcase className="w-5 h-5" />
+            </div>
+            <div>
+              <h4 className="text-base font-bold text-[#152D46] mb-1">
+                For Professionals with 5+ Years Experience
+              </h4>
+              <p className="text-xs sm:text-sm text-[#526477] leading-relaxed">
+                This personalised service is structured specifically for professionals who already possess a track record in the workforce. It is not designed for fresh graduates or entry-level job seekers.
+              </p>
+            </div>
+          </div>
+
+          <div className="bg-[#F7F9FC] border border-[#E5EAF0] rounded-2xl p-6 sm:p-7 flex items-start gap-4">
+            <div className="w-10 h-10 rounded-xl bg-[#17A6A0]/10 text-[#17A6A0] flex items-center justify-center shrink-0 mt-0.5">
+              <Clock className="w-5 h-5" />
+            </div>
+            <div>
+              <h4 className="text-base font-bold text-[#152D46] mb-1">
+                Flexible Participation
+              </h4>
+              <p className="text-xs sm:text-sm text-[#526477] leading-relaxed">
+                Your career journey is built around your schedule. You participate according to your professional availability and a mutually agreed timeline, with no rigid daily-hours requirement.
+              </p>
+            </div>
+          </div>
+        </div>
+
         {/* Inclusivity & Ecosystem Scope Note */}
-        <div className="mt-12 bg-gradient-to-r from-[#F7F9FC] via-white to-[#F7F9FC] border border-[#E5EAF0] rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row items-center gap-6">
+        <div className="mt-8 bg-gradient-to-r from-[#F7F9FC] via-white to-[#F7F9FC] border border-[#E5EAF0] rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row items-center gap-6">
           <div className="w-12 h-12 rounded-xl bg-[#1269A8]/10 text-[#1269A8] flex items-center justify-center shrink-0">
             <Globe className="w-6 h-6" />
           </div>
@@ -105,7 +135,7 @@ export const Audience: React.FC = () => {
               An Inclusive Long-Term Career Technology Vision
             </h4>
             <p className="text-sm text-[#526477] leading-relaxed">
-              While our high-touch personalised assistance is tailored for experienced career milestones, Aagoi’s overarching career technology ecosystem is built to remain fundamentally inclusive across sectors, career stages, and backgrounds.
+              While our high-touch personalised assistance is tailored for experienced career milestones (5+ years), Aagoi’s overarching career technology ecosystem is being developed to remain fundamentally inclusive across sectors, career stages, and backgrounds.
             </p>
           </div>
         </div>

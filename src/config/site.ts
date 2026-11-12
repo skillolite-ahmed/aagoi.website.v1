@@ -6,14 +6,15 @@ export interface NavItem {
 export const siteConfig = {
   name: 'Aagoi',
   tagline: 'Moving Your Career Forward.',
+  website: 'https://aagoi.in',
   status: 'COMING SOON',
-  introLabel: 'AI-POWERED CAREER TECHNOLOGY',
+  introLabel: 'CAREER TECHNOLOGY & SUPPORT',
   description:
-    'Aagoi brings together AI-powered career technology, practical solutions and personalised human assistance to help experienced professionals navigate their next career move.',
+    'Aagoi brings together intelligent career technology and personalised human support to help experienced professionals navigate their next career move with greater clarity, direction and confidence.',
   
   // Official Two Distinct Form Destinations
   forms: {
-    client: 'https://forms.gle/JCE6UwRnGxVvW6ae9',
+    client: 'https://forms.gle/TwFJn46dcSRjpyXh9',
     partnership: 'https://forms.gle/r735TNUF4Y8gwbf79',
   },
 

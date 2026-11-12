@@ -73,8 +73,9 @@ aagoi-website/
 
 All enquiry pathways and contact points are managed centrally in `src/config/site.ts`:
 
-- **Client Early-Access Form:** `https://forms.gle/JCE6UwRnGxVvW6ae9`
+- **Client Early-Access Form:** `https://forms.gle/TwFJn46dcSRjpyXh9`
 - **Partnership / Collaboration Form:** `https://forms.gle/r735TNUF4Y8gwbf79`
+- **Official Website:** `https://aagoi.in`
 - **Official Contact Email:** `founder@aagoi.in`
 - **Official Telephone:** `+91 9707146758`
 

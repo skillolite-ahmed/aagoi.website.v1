@@ -123,20 +123,20 @@ export const Approach: React.FC = () => {
         <div className="mt-12 bg-white rounded-2xl border border-[#E5EAF0] p-8 max-w-4xl mx-auto shadow-xs text-center sm:text-left flex flex-col sm:flex-row items-center justify-between gap-6">
           <div className="space-y-1">
             <h4 className="text-base font-bold text-[#152D46]">
-              Looking to experience our personalised approach?
+              Ready for a more structured career move?
             </h4>
             <p className="text-xs sm:text-sm text-[#526477]">
-              Early access is now open for experienced professionals seeking their next career transition.
+              Designed for experienced professionals with 5+ years of work experience. Flexible participation aligned with your schedule.
             </p>
           </div>
           <a
             href={siteConfig.forms.client}
             target="_blank"
             rel="noopener noreferrer"
-            className="shrink-0 inline-flex items-center gap-2 bg-[#1269A8] hover:bg-[#1686D9] text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition-colors shadow-2xs"
+            className="shrink-0 inline-flex items-center gap-2 bg-[#1269A8] hover:bg-[#1686D9] text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition-colors shadow-2xs group"
           >
-            <span>Request Early Access</span>
-            <ArrowRight className="w-4 h-4" />
+            <span>Explore Early Access</span>
+            <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5" />
           </a>
         </div>
       </div>
