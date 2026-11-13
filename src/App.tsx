@@ -3,47 +3,51 @@ import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { About } from './components/About';
 import { Approach } from './components/Approach';
-import { Audience } from './components/Audience';
 import { Values } from './components/Values';
+import { Difference } from './components/Difference';
+import { Audience } from './components/Audience';
 import { EarlyAccess } from './components/EarlyAccess';
-import { Partnerships } from './components/Partnerships';
 import { Contact } from './components/Contact';
+import { EthicalFoundation } from './components/EthicalFoundation';
 import { Footer } from './components/Footer';
 
 export const App: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col bg-[#F7F9FC] text-[#152D46] selection:bg-[#1269A8] selection:text-white">
-      {/* Navigation */}
+      {/* 1. Navigation */}
       <Navbar />
 
       {/* Main Page Flow */}
       <main className="flex-1">
-        {/* Section 01: Hero */}
+        {/* 2. Hero (Navy) */}
         <Hero />
 
-        {/* Section 02: Problem Recognition */}
+        {/* 3. The Challenge (White) */}
         <About />
 
-        {/* Section 03: How Aagoi Supports Your Career Move */}
+        {/* 4. Our Services (Off-white) */}
         <Approach />
 
-        {/* Section 04: How the Process Works */}
+        {/* 5. The Process (Navy) */}
         <Values />
 
-        {/* Section 05: Who We Help */}
+        {/* 6. What Makes Aagoi Different? (White) */}
+        <Difference />
+
+        {/* 7. Who We Help (Off-white) */}
         <Audience />
 
-        {/* Section 06: Participation & Trust + Section 07: Final CTA */}
+        {/* 8. Participation & Trust (White) and Final Application CTA (Off-white) */}
         <EarlyAccess />
 
-        {/* Section 08: Partnerships (compact CTA) */}
-        <Partnerships />
-
-        {/* Contact */}
+        {/* 9. Contact (White) */}
         <Contact />
+
+        {/* 10. Our Ethical Foundation (Light Teal Tint) */}
+        <EthicalFoundation />
       </main>
 
-      {/* Footer */}
+      {/* 11. Footer (Navy) */}
       <Footer />
     </div>
   );

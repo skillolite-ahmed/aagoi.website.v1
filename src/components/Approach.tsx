@@ -1,43 +1,33 @@
 import React from 'react';
-import { Compass, FileText, CheckSquare, MessageCircle } from 'lucide-react';
-import { siteConfig } from '../config/site';
 
 const services = [
   {
-    id: 'direction',
-    icon: Compass,
-    color: '#1269A8',
-    title: 'Career Direction & Opportunity Research',
+    num: '01',
+    title: 'Career Direction & Clarity',
     description:
-      'We take time to understand your professional background, career goals, preferences and target roles. Based on this, we research relevant opportunities aligned to your experience and direction.',
-    note: 'Your goals, your direction.',
+      'Build a clearer picture of your next move by aligning your experience, strengths and career ambitions.',
+    note: 'Clarity before the next move.',
   },
   {
-    id: 'profile',
-    icon: FileText,
-    color: '#17A6A0',
-    title: 'Professional Profile & Resume Support',
+    num: '02',
+    title: 'Professional Positioning',
     description:
-      'We help strengthen the way your professional experience and achievements are presented — refining your resume and professional profiles to reflect your capabilities and target opportunities accurately.',
-    note: 'Your experience, presented at its best.',
+      'Present your experience, achievements and capabilities with clarity, so your professional profile reflects the roles you want to pursue.',
+    note: 'Your experience, clearly communicated.',
   },
   {
-    id: 'evaluation',
-    icon: CheckSquare,
-    color: '#1686D9',
-    title: 'Opportunity Evaluation & Match Verification',
+    num: '03',
+    title: 'Relevant Career Opportunities',
     description:
-      'We review identified opportunities against your requirements and experience before presenting them to you. You review and decide which opportunities to pursue — Aagoi does not make career decisions on your behalf.',
-    note: 'You remain in control.',
+      'Focus on opportunities that fit your experience, preferences and career direction — not simply the number of openings available.',
+    note: 'Relevance over volume.',
   },
   {
-    id: 'outreach',
-    icon: MessageCircle,
-    color: '#1269A8',
-    title: 'HR/Employer Outreach & Follow-up Coordination',
+    num: '04',
+    title: 'Coordinated Career Support',
     description:
-      'We support relevant professional outreach to HR teams and employers, and help organise communication and follow-up activity — reducing the administrative burden of your job search.',
-    note: 'Organised. Coordinated. Professional.',
+      'Receive personalised guidance and organised support as you review opportunities, share feedback and move through your career transition.',
+    note: 'Guidance with you in control.',
   },
 ];
 
@@ -45,62 +35,45 @@ export const Approach: React.FC = () => {
   return (
     <section id="approach" className="py-24 bg-[#F7F9FC] border-t border-[#E5EAF0]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section header */}
-        <div className="max-w-3xl mx-auto text-center space-y-4 mb-16">
+        {/* Left-aligned Section header */}
+        <div className="max-w-3xl space-y-4 mb-16 text-left">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider bg-[#1269A8]/10 text-[#1269A8]">
             Our Services
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#152D46] tracking-tight">
-            How Aagoi supports your career move.
+            Support Built Around Your Next Career Move.
           </h2>
-          <p className="text-lg text-[#526477] leading-relaxed">
-            A service built around your experience and your next move — combining human expertise, structured research and coordinated support.
+          <p className="text-base sm:text-lg text-[#526477] leading-relaxed">
+            From gaining career direction to presenting your experience with clarity, Aagoi brings intelligent technology, strategic guidance and human understanding to your next move.
           </p>
         </div>
 
-        {/* Four service cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {services.map((service) => {
-            const Icon = service.icon;
-            return (
-              <div
-                key={service.id}
-                className="bg-white border border-[#E5EAF0] rounded-2xl p-8 shadow-xs hover:shadow-lg hover:border-[#1269A8]/30 transition-all duration-300 flex flex-col"
-              >
-                <div
-                  className="w-12 h-12 rounded-xl flex items-center justify-center mb-5"
-                  style={{ backgroundColor: `${service.color}15`, color: service.color }}
-                >
-                  <Icon className="w-6 h-6" />
+        {/* 2x2 Editorial Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-12 lg:gap-x-16 lg:gap-y-14">
+          {services.map((service) => (
+            <div key={service.num} className="flex flex-col justify-between">
+              <div>
+                {/* Large Numeral in brand blue */}
+                <div className="text-3xl sm:text-4xl font-extrabold text-[#1269A8] tracking-tight mb-3">
+                  {service.num}
                 </div>
-                <h3 className="text-lg font-bold text-[#152D46] mb-3">{service.title}</h3>
-                <p className="text-sm text-[#526477] leading-relaxed flex-1">{service.description}</p>
-                <div className="mt-6 pt-4 border-t border-[#E5EAF0] text-xs font-semibold text-[#1269A8]">
-                  {service.note}
-                </div>
+                {/* Title */}
+                <h3 className="text-xl sm:text-2xl font-bold text-[#152D46] mb-3">
+                  {service.title}
+                </h3>
+                {/* Description 16-17px */}
+                <p className="text-base sm:text-[17px] text-[#526477] leading-relaxed mb-6">
+                  {service.description}
+                </p>
               </div>
-            );
-          })}
-        </div>
-
-        {/* Callout */}
-        <div className="mt-12 bg-white rounded-2xl border border-[#E5EAF0] p-8 max-w-4xl mx-auto shadow-xs text-center sm:text-left flex flex-col sm:flex-row items-center justify-between gap-6">
-          <div className="space-y-1">
-            <h4 className="text-base font-bold text-[#152D46]">
-              Ready to approach your career move differently?
-            </h4>
-            <p className="text-xs sm:text-sm text-[#526477] leading-relaxed">
-              For professionals with 5+ years of total professional work experience. No upfront payment to begin.
-            </p>
-          </div>
-          <a
-            href={siteConfig.forms.client}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="shrink-0 inline-flex items-center gap-2 bg-[#1269A8] hover:bg-[#1686D9] text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition-colors shadow-xs group focus:outline-none focus:ring-2 focus:ring-[#1269A8] focus:ring-offset-2"
-          >
-            <span>Apply for Career Support</span>
-          </a>
+              {/* Note under a hairline */}
+              <div className="pt-3 border-t border-[#E5EAF0]">
+                <span className="text-xs sm:text-sm font-medium text-[#17A6A0]">
+                  {service.note}
+                </span>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

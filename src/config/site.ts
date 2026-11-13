@@ -8,7 +8,7 @@ export const siteConfig = {
   tagline: 'Moving Your Career Forward.',
   website: 'https://aagoi.in',
   status: 'EARLY ACCESS',
-  introLabel: 'CAREER TECHNOLOGY & SUPPORT',
+  introLabel: 'PERSONALISED CAREER SUPPORT',
   description:
     'Discover Aagoi, an early-stage career-technology initiative offering personalised career support for professionals with 5+ years of total professional work experience, including managers, senior specialists and business leaders, while developing a broader connected career ecosystem.',
   
@@ -29,11 +29,9 @@ export const siteConfig = {
 
   // Navigation Links
   navItems: [
-    { label: 'Home', href: '#home' },
     { label: 'Our Services', href: '#approach' },
-    { label: 'How It Works', href: '#values' },
+    { label: 'Our Process', href: '#values' },
     { label: 'Who We Help', href: '#audience' },
-    { label: 'Partnerships', href: '#partnerships' },
     { label: 'Contact', href: '#contact' },
   ] as NavItem[],
 

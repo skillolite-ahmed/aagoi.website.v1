@@ -22,6 +22,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   background-color: #F7F9FC;
   color: #152D46;
@@ -36,16 +37,15 @@ h1, h2, h3, h4, h5, h6 {
   color: #FFFFFF;
 }
 
-/* Keep the fixed navbar clear while reducing excess hero whitespace on larger screens. */
 @media (min-width: 768px) {
   #home {
-    padding-top: 8.5rem;
+    padding-top: 7rem;
   }
 }
 
 @media (min-width: 1024px) {
   #home {
-    padding-top: 9rem;
+    padding-top: 7.5rem;
   }
 }
 

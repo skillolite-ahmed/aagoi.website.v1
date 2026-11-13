@@ -18,7 +18,7 @@ export const Navbar: React.FC = () => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-white/95 backdrop-blur-md shadow-sm border-b border-[#E5EAF0]'
+          ? 'bg-white/95 backdrop-blur-md shadow-xs border-b border-[#E5EAF0]'
           : 'bg-white/80 backdrop-blur-sm border-b border-[#E5EAF0]/60'
       }`}
     >
@@ -43,7 +43,7 @@ export const Navbar: React.FC = () => {
               <a
                 key={item.label}
                 href={item.href}
-                className="text-sm font-medium text-[#526477] hover:text-[#152D46] px-3 py-2 rounded-lg transition-colors hover:bg-[#F7F9FC] focus:outline-none focus:ring-2 focus:ring-[#1269A8]/40"
+                className="text-sm font-medium text-[#526477] hover:text-[#152D46] px-3.5 py-2 rounded-lg transition-colors hover:bg-[#F7F9FC] focus:outline-none focus:ring-2 focus:ring-[#1269A8]/40"
               >
                 {item.label}
               </a>
@@ -56,7 +56,7 @@ export const Navbar: React.FC = () => {
               href={siteConfig.forms.client}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-[#1269A8] hover:bg-[#1686D9] text-white text-sm font-semibold px-5 py-2.5 rounded-lg shadow-sm hover:shadow transition-all duration-200 group focus:outline-none focus:ring-2 focus:ring-[#1269A8] focus:ring-offset-2"
+              className="inline-flex items-center gap-2 bg-[#1269A8] hover:bg-[#1686D9] text-white text-sm font-semibold px-5 py-2.5 rounded-lg shadow-xs hover:shadow transition-all duration-200 group focus:outline-none focus:ring-2 focus:ring-[#1269A8] focus:ring-offset-2"
             >
               <span>Apply for Career Support</span>
               <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
@@ -80,14 +80,14 @@ export const Navbar: React.FC = () => {
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-white border-b border-[#E5EAF0] shadow-lg animate-in slide-in-from-top duration-200">
+        <div className="lg:hidden bg-white border-b border-[#E5EAF0] shadow-lg">
           <div className="px-4 pt-3 pb-6 space-y-2">
             {siteConfig.navItems.map((item) => (
               <a
                 key={item.label}
                 href={item.href}
                 onClick={() => setMobileMenuOpen(false)}
-                className="block px-3 py-2.5 rounded-lg text-base font-medium text-[#152D46] hover:bg-[#F7F9FC] hover:text-[#1269A8] transition-colors"
+                className="block px-3 py-2.5 rounded-lg text-base font-medium text-[#152D46] hover:bg-[#F7F9FC] hover:text-[#1269A8] transition-colors focus:outline-none focus:ring-2 focus:ring-[#1269A8]"
               >
                 {item.label}
               </a>
@@ -98,7 +98,7 @@ export const Navbar: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setMobileMenuOpen(false)}
-                className="flex items-center justify-center gap-2 w-full bg-[#1269A8] hover:bg-[#1686D9] text-white text-base font-semibold px-5 py-3 rounded-lg shadow-sm transition-colors"
+                className="flex items-center justify-center gap-2 w-full bg-[#1269A8] hover:bg-[#1686D9] text-white text-base font-semibold px-5 py-3 rounded-lg shadow-xs transition-colors focus:outline-none focus:ring-2 focus:ring-[#1269A8]"
               >
                 <span>Apply for Career Support</span>
                 <ArrowUpRight className="w-4 h-4" />
