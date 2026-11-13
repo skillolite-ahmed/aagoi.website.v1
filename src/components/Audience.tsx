@@ -1,87 +1,83 @@
 import React from 'react';
-import { Briefcase, TrendingUp, RefreshCw, Globe, CheckCircle2, Clock } from 'lucide-react';
+import { TrendingUp, Briefcase, Building2, CheckCircle2, Globe } from 'lucide-react';
+
+const categories = [
+  {
+    title: 'Experienced Professionals',
+    subtitle: 'Accelerating Momentum',
+    description:
+      'Professionals with established work experience exploring a more structured and supported approach to their next career move.',
+    icon: TrendingUp,
+    traits: [
+      '5+ years of total professional work experience',
+      'Seeking a clearer direction for their next move',
+      'Ready for a structured, supported approach',
+    ],
+  },
+  {
+    title: 'Managers, Senior Specialists & Leaders',
+    subtitle: 'Strategic Career Moves',
+    description:
+      'Managers, Senior Managers and experienced specialists exploring strategic career moves and leadership opportunities with appropriate discretion.',
+    icon: Briefcase,
+    traits: [
+      '5+ years of total professional work experience',
+      'Navigating high-stakes career transitions',
+      'Seeking alignment with the right opportunity',
+    ],
+  },
+  {
+    title: 'Functional Heads & Business Leaders',
+    subtitle: 'Senior-Level Direction',
+    description:
+      'Functional leaders and business leaders evaluating senior-level opportunities and their next professional direction, where experience and positioning matter most.',
+    icon: Building2,
+    traits: [
+      '5+ years of total professional work experience',
+      'Evaluating senior and leadership opportunities',
+      'Looking for a credible, confidential process',
+    ],
+  },
+];
 
 export const Audience: React.FC = () => {
-  const categories = [
-    {
-      title: 'Mid-Career Professionals',
-      subtitle: 'Accelerating Momentum',
-      description:
-        'Experienced individuals seeking intentional upward mobility, greater scope, or breaking through mid-career plateaus into higher-impact roles.',
-      icon: TrendingUp,
-      traits: [
-        '5+ years of total professional work experience',
-        'Seeking strategic career progression',
-        'Desire for structured market positioning',
-      ],
-    },
-    {
-      title: 'Managers, Senior Specialists & Leaders',
-      subtitle: 'Strategic & Confidential Moves',
-      description:
-        'Managers, Senior Managers, Functional Heads, experienced specialists and business leaders exploring strategic career moves and leadership opportunities.',
-      icon: Briefcase,
-      traits: [
-        'Extensive domain mastery & track record',
-        'High-discretion executive transitions',
-        'Alignment with organizational vision',
-      ],
-    },
-    {
-      title: 'Career & Domain Transitioners',
-      subtitle: 'Repositioning Core Expertise',
-      description:
-        'Professionals shifting between industries, functions, or consulting into tech, who need their transferable experience translated into high-relevance positioning.',
-      icon: RefreshCw,
-      traits: [
-        'Transferable cross-functional acumen',
-        'Strategic narrative repositioning',
-        'Targeted transition roadmaps',
-      ],
-    },
-  ];
-
   return (
     <section id="audience" className="py-24 bg-white border-t border-[#E5EAF0]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="max-w-3xl mx-auto text-center space-y-4">
+        <div className="max-w-3xl mx-auto text-center space-y-4 mb-16">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider bg-[#1269A8]/10 text-[#1269A8]">
             Who We Help
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#152D46] tracking-tight">
-            Designed for Experienced Professionals
+            Career support for experienced professionals.
           </h2>
           <p className="text-lg text-[#526477] leading-relaxed">
-            Aagoi&apos;s personalised career support is intended for professionals with 5+ years of total professional work experience who are ready to take a considered next step in their careers. This service is currently focused on experienced professionals rather than fresh graduates or entry-level job seekers.
+            Aagoi's personalised career support is designed for professionals with 5+ years of total professional work experience who are ready to take a more considered, structured approach to their next career move.
           </p>
         </div>
 
         {/* 3 Audience Cards */}
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="mt-4 grid grid-cols-1 md:grid-cols-3 gap-8">
           {categories.map((cat, idx) => {
             const Icon = cat.icon;
             return (
               <div
                 key={idx}
-                className="bg-[#F7F9FC] border border-[#E5EAF0] rounded-2xl p-8 hover:border-[#1269A8]/50 hover:bg-white hover:shadow-lg transition-all duration-300 flex flex-col justify-between"
+                className="bg-[#F7F9FC] border border-[#E5EAF0] rounded-2xl p-8 hover:border-[#1269A8]/40 hover:bg-white hover:shadow-lg transition-all duration-300 flex flex-col"
               >
                 <div>
-                  <div className="w-12 h-12 rounded-xl bg-white border border-[#E5EAF0] text-[#1269A8] flex items-center justify-center mb-6 shadow-2xs">
+                  <div className="w-12 h-12 rounded-xl bg-white border border-[#E5EAF0] text-[#1269A8] flex items-center justify-center mb-5 shadow-xs">
                     <Icon className="w-6 h-6" />
                   </div>
                   <span className="text-xs font-semibold text-[#17A6A0] uppercase tracking-wider">
                     {cat.subtitle}
                   </span>
-                  <h3 className="text-xl font-bold text-[#152D46] mt-1 mb-3">
-                    {cat.title}
-                  </h3>
-                  <p className="text-sm text-[#526477] leading-relaxed mb-6">
-                    {cat.description}
-                  </p>
+                  <h3 className="text-xl font-bold text-[#152D46] mt-1 mb-3">{cat.title}</h3>
+                  <p className="text-sm text-[#526477] leading-relaxed mb-6">{cat.description}</p>
                 </div>
 
-                <div className="pt-6 border-t border-[#E5EAF0] space-y-2.5">
+                <div className="pt-6 border-t border-[#E5EAF0] space-y-2.5 mt-auto">
                   {cat.traits.map((trait, tIdx) => (
                     <div key={tIdx} className="flex items-center gap-2 text-xs text-[#526477]">
                       <CheckCircle2 className="w-3.5 h-3.5 text-[#1269A8] shrink-0" />
@@ -94,50 +90,17 @@ export const Audience: React.FC = () => {
           })}
         </div>
 
-        {/* Key Service Criteria & Participation Commitment */}
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
-          {/* Card 1: Eligibility Focus */}
-          <div className="bg-[#F7F9FC] border border-[#E5EAF0] rounded-2xl p-6 sm:p-7 flex items-start gap-4">
-            <div className="w-10 h-10 rounded-xl bg-[#1269A8]/10 text-[#1269A8] flex items-center justify-center shrink-0 mt-0.5">
-              <Briefcase className="w-5 h-5" />
-            </div>
-            <div>
-              <h4 className="text-base font-bold text-[#152D46] mb-1.5">
-                Eligibility Focus
-              </h4>
-              <p className="text-xs sm:text-sm text-[#526477] leading-relaxed">
-                Aagoi&apos;s personalised career support is currently focused on experienced professionals with 5+ years of total professional work experience, while our broader career-technology ecosystem is being built to support professionals across diverse stages over time.
-              </p>
-            </div>
-          </div>
-
-          {/* Card 2: A Small Daily Commitment */}
-          <div className="bg-[#F7F9FC] border border-[#E5EAF0] rounded-2xl p-6 sm:p-7 flex items-start gap-4">
-            <div className="w-10 h-10 rounded-xl bg-[#17A6A0]/10 text-[#17A6A0] flex items-center justify-center shrink-0 mt-0.5">
-              <Clock className="w-5 h-5" />
-            </div>
-            <div>
-              <h4 className="text-base font-bold text-[#152D46] mb-1.5">
-                A Small Daily Commitment. A More Focused Career Move.
-              </h4>
-              <p className="text-xs sm:text-sm text-[#526477] leading-relaxed">
-                Your career progress works best when we work together. Aagoi provides personalised guidance and structured support, while your active participation helps us move things forward. We ask you to set aside a few minutes each working day to review updates, share feedback, respond to relevant opportunities and complete agreed next steps. There is no fixed daily time requirement or need for lengthy sessions—just consistent involvement and timely communication, fitted around your existing schedule.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* Inclusivity & Ecosystem Scope Note */}
-        <div className="mt-8 bg-gradient-to-r from-[#F7F9FC] via-white to-[#F7F9FC] border border-[#E5EAF0] rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row items-center gap-6">
+        {/* Eligibility Note */}
+        <div className="mt-10 bg-[#F7F9FC] border border-[#E5EAF0] rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row items-center gap-6 max-w-5xl mx-auto">
           <div className="w-12 h-12 rounded-xl bg-[#1269A8]/10 text-[#1269A8] flex items-center justify-center shrink-0">
             <Globe className="w-6 h-6" />
           </div>
-          <div className="space-y-1 text-center sm:text-left">
-            <h4 className="text-base font-bold text-[#152D46]">
-              An Inclusive Long-Term Career Technology Vision
+          <div className="text-center sm:text-left">
+            <h4 className="text-base font-bold text-[#152D46] mb-1">
+              Current Eligibility — 5+ Years of Total Professional Work Experience
             </h4>
             <p className="text-sm text-[#526477] leading-relaxed">
-              While our current high-touch personalised assistance is tailored for experienced professionals (5+ years of total professional work experience), Aagoi&apos;s overarching career technology ecosystem is being developed to remain fundamentally inclusive across sectors, career stages, and backgrounds over time.
+              Aagoi's personalised career support is currently focused on experienced professionals with 5+ years of total professional work experience. Our broader career-technology ecosystem is being developed to support professionals across diverse stages over time.
             </p>
           </div>
         </div>

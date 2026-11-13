@@ -30,10 +30,9 @@ export const siteConfig = {
   // Navigation Links
   navItems: [
     { label: 'Home', href: '#home' },
-    { label: 'About', href: '#about' },
-    { label: 'Our Approach', href: '#approach' },
+    { label: 'Our Services', href: '#approach' },
+    { label: 'How It Works', href: '#values' },
     { label: 'Who We Help', href: '#audience' },
-    { label: 'Our Values', href: '#values' },
     { label: 'Partnerships', href: '#partnerships' },
     { label: 'Contact', href: '#contact' },
   ] as NavItem[],

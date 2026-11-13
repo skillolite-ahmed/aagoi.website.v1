@@ -18,32 +18,32 @@ export const App: React.FC = () => {
 
       {/* Main Page Flow */}
       <main className="flex-1">
-        {/* Section 2: Hero */}
+        {/* Section 01: Hero */}
         <Hero />
 
-        {/* Section 3: About */}
+        {/* Section 02: Problem Recognition */}
         <About />
 
-        {/* Section 4: Our Approach */}
+        {/* Section 03: How Aagoi Supports Your Career Move */}
         <Approach />
 
-        {/* Section 5: Who We Help */}
-        <Audience />
-
-        {/* Section 6: Our Values */}
+        {/* Section 04: How the Process Works */}
         <Values />
 
-        {/* Section 7: Client Early Access */}
+        {/* Section 05: Who We Help */}
+        <Audience />
+
+        {/* Section 06: Participation & Trust + Section 07: Final CTA */}
         <EarlyAccess />
 
-        {/* Section 8: Partner with Aagoi */}
+        {/* Section 08: Partnerships (compact CTA) */}
         <Partnerships />
 
-        {/* Section 9: Contact */}
+        {/* Contact */}
         <Contact />
       </main>
 
-      {/* Section 10: Footer */}
+      {/* Footer */}
       <Footer />
     </div>
   );

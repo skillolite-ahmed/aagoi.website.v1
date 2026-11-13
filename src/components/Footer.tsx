@@ -18,11 +18,9 @@ export const Footer: React.FC = () => {
                 className="h-10 w-auto object-contain"
               />
             </a>
-            <p className="text-base font-semibold text-slate-200">
-              {siteConfig.tagline}
-            </p>
+            <p className="text-base font-semibold text-slate-200">{siteConfig.tagline}</p>
             <p className="text-sm text-slate-400 max-w-sm leading-relaxed">
-              {siteConfig.description}
+              Personalised career support for experienced professionals — combining human guidance, structured opportunity research and coordinated execution.
             </p>
             <div className="pt-2 text-xs text-[#17A6A0] font-medium">
               Progress with Purpose. Built on Trust.
@@ -36,13 +34,18 @@ export const Footer: React.FC = () => {
             </h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#about" className="text-slate-400 hover:text-white transition-colors">
-                  About
+                <a href="#problem" className="text-slate-400 hover:text-white transition-colors">
+                  The Challenge
                 </a>
               </li>
               <li>
                 <a href="#approach" className="text-slate-400 hover:text-white transition-colors">
-                  Our Approach
+                  Our Services
+                </a>
+              </li>
+              <li>
+                <a href="#values" className="text-slate-400 hover:text-white transition-colors">
+                  How It Works
                 </a>
               </li>
               <li>
@@ -51,8 +54,8 @@ export const Footer: React.FC = () => {
                 </a>
               </li>
               <li>
-                <a href="#values" className="text-slate-400 hover:text-white transition-colors">
-                  Our Values
+                <a href="#early-access" className="text-slate-400 hover:text-white transition-colors">
+                  Participation &amp; Trust
                 </a>
               </li>
               <li>
@@ -63,7 +66,7 @@ export const Footer: React.FC = () => {
             </ul>
           </div>
 
-          {/* Dedicated Enquiries & Verified Contacts */}
+          {/* Enquiries & Contacts */}
           <div className="lg:col-span-4 space-y-4">
             <h4 className="text-xs font-bold uppercase tracking-wider text-slate-300">
               Direct Enquiry Pathways
@@ -108,7 +111,7 @@ export const Footer: React.FC = () => {
           </div>
         </div>
 
-        {/* Bottom Bar: Dynamic Copyright & Inclusivity note */}
+        {/* Bottom Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
           <div>
             &copy; {currentYear} {siteConfig.name}. All rights reserved.

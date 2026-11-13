@@ -1,142 +1,105 @@
 import React from 'react';
-import { CircuitBoard, Users, Network, Check, ArrowRight } from 'lucide-react';
+import { Compass, FileText, CheckSquare, MessageCircle } from 'lucide-react';
 import { siteConfig } from '../config/site';
 
-export const Approach: React.FC = () => {
-  const cards = [
-    {
-      id: 'human',
-      title: 'Personalised Human Support',
-      description:
-        'Practical guidance and individual attention delivered directly by our team throughout each stage of your career move.',
-      icon: Users,
-      accentColor: '#17A6A0',
-      features: [
-        'Nuanced professional counsel',
-        'Tailored transition strategy',
-        'High-trust human perspective',
-      ],
-      tag: 'Current Service',
-    },
-    {
-      id: 'tech',
-      title: 'Intelligent Career Technology',
-      description:
-        'Developing AI-powered tools and structured digital solutions designed to bring analytical clarity, insights and long-term direction to career progression.',
-      icon: CircuitBoard,
-      accentColor: '#1269A8',
-      features: [
-        'Insightful skill & trajectory mapping',
-        'Structured professional positioning',
-        'Intelligent opportunity identification',
-      ],
-      tag: 'In Development',
-    },
-    {
-      id: 'ecosystem',
-      title: 'Connected Career Ecosystem',
-      description:
-        'Our developing ecosystem designed to provide an organised, continuous way to approach opportunities, professional connections and career progress.',
-      icon: Network,
-      accentColor: '#1686D9',
-      features: [
-        'Holistic career development loop',
-        'Curated professional networks',
-        'Sustained career momentum',
-      ],
-      tag: 'Broader Vision',
-    },
-  ];
+const services = [
+  {
+    id: 'direction',
+    icon: Compass,
+    color: '#1269A8',
+    title: 'Career Direction & Opportunity Research',
+    description:
+      'We take time to understand your professional background, career goals, preferences and target roles. Based on this, we research relevant opportunities aligned to your experience and direction.',
+    note: 'Your goals, your direction.',
+  },
+  {
+    id: 'profile',
+    icon: FileText,
+    color: '#17A6A0',
+    title: 'Professional Profile & Resume Support',
+    description:
+      'We help strengthen the way your professional experience and achievements are presented — refining your resume and professional profiles to reflect your capabilities and target opportunities accurately.',
+    note: 'Your experience, presented at its best.',
+  },
+  {
+    id: 'evaluation',
+    icon: CheckSquare,
+    color: '#1686D9',
+    title: 'Opportunity Evaluation & Match Verification',
+    description:
+      'We review identified opportunities against your requirements and experience before presenting them to you. You review and decide which opportunities to pursue — Aagoi does not make career decisions on your behalf.',
+    note: 'You remain in control.',
+  },
+  {
+    id: 'outreach',
+    icon: MessageCircle,
+    color: '#1269A8',
+    title: 'HR/Employer Outreach & Follow-up Coordination',
+    description:
+      'We support relevant professional outreach to HR teams and employers, and help organise communication and follow-up activity — reducing the administrative burden of your job search.',
+    note: 'Organised. Coordinated. Professional.',
+  },
+];
 
+export const Approach: React.FC = () => {
   return (
-    <section id="approach" className="py-24 bg-[#F7F9FC]">
+    <section id="approach" className="py-24 bg-[#F7F9FC] border-t border-[#E5EAF0]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
-        <div className="max-w-3xl mx-auto text-center space-y-4">
+        {/* Section header */}
+        <div className="max-w-3xl mx-auto text-center space-y-4 mb-16">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider bg-[#1269A8]/10 text-[#1269A8]">
-            Our Approach
+            Our Services
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#152D46] tracking-tight">
-            A Smarter, More Connected Approach to Career Growth.
+            How Aagoi supports your career move.
           </h2>
           <p className="text-lg text-[#526477] leading-relaxed">
-            By bridging practical human guidance with developing intelligent career technology, Aagoi delivers a structured, dignified career journey.
+            A service built around your experience and your next move — combining human expertise, structured research and coordinated support.
           </p>
         </div>
 
-        {/* Three Feature Cards */}
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
-          {cards.map((card) => {
-            const Icon = card.icon;
+        {/* Four service cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {services.map((service) => {
+            const Icon = service.icon;
             return (
               <div
-                key={card.id}
-                className="group relative bg-white rounded-2xl border border-[#E5EAF0] p-8 shadow-xs hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between"
+                key={service.id}
+                className="bg-white border border-[#E5EAF0] rounded-2xl p-8 shadow-xs hover:shadow-lg hover:border-[#1269A8]/30 transition-all duration-300 flex flex-col"
               >
-                <div>
-                  {/* Top Bar with Icon & Tag */}
-                  <div className="flex items-center justify-between mb-6">
-                    <div
-                      className="w-12 h-12 rounded-xl flex items-center justify-center transition-colors duration-200"
-                      style={{
-                        backgroundColor: `${card.accentColor}15`,
-                        color: card.accentColor,
-                      }}
-                    >
-                      <Icon className="w-6 h-6" />
-                    </div>
-                    <span className="text-xs font-semibold tracking-wide text-[#526477] bg-[#F7F9FC] px-3 py-1 rounded-full border border-[#E5EAF0]">
-                      {card.tag}
-                    </span>
-                  </div>
-
-                  {/* Title & Description */}
-                  <h3 className="text-xl font-bold text-[#152D46] mb-3 group-hover:text-[#1269A8] transition-colors">
-                    {card.title}
-                  </h3>
-                  <p className="text-[#526477] text-sm leading-relaxed mb-6">
-                    {card.description}
-                  </p>
-
-                  {/* Feature Bullets */}
-                  <ul className="space-y-2.5 pt-4 border-t border-[#E5EAF0]">
-                    {card.features.map((feat, idx) => (
-                      <li key={idx} className="flex items-center gap-2 text-xs font-medium text-[#526477]">
-                        <Check className="w-3.5 h-3.5 text-[#17A6A0] shrink-0" />
-                        <span>{feat}</span>
-                      </li>
-                    ))}
-                  </ul>
+                <div
+                  className="w-12 h-12 rounded-xl flex items-center justify-center mb-5"
+                  style={{ backgroundColor: `${service.color}15`, color: service.color }}
+                >
+                  <Icon className="w-6 h-6" />
                 </div>
-
-                {/* Bottom Link indicator */}
-                <div className="mt-8 pt-4 border-t border-[#E5EAF0]/60 flex items-center justify-between text-xs font-semibold text-[#1269A8]">
-                  <span>Discover the difference</span>
-                  <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                <h3 className="text-lg font-bold text-[#152D46] mb-3">{service.title}</h3>
+                <p className="text-sm text-[#526477] leading-relaxed flex-1">{service.description}</p>
+                <div className="mt-6 pt-4 border-t border-[#E5EAF0] text-xs font-semibold text-[#1269A8]">
+                  {service.note}
                 </div>
               </div>
             );
           })}
         </div>
 
-        {/* Integration Callout */}
+        {/* Callout */}
         <div className="mt-12 bg-white rounded-2xl border border-[#E5EAF0] p-8 max-w-4xl mx-auto shadow-xs text-center sm:text-left flex flex-col sm:flex-row items-center justify-between gap-6">
           <div className="space-y-1">
             <h4 className="text-base font-bold text-[#152D46]">
-              Ready for a more structured career move?
+              Ready to approach your career move differently?
             </h4>
             <p className="text-xs sm:text-sm text-[#526477] leading-relaxed">
-              Designed for professionals with 5+ years of total professional work experience. We provide structured support, while you contribute a few minutes each working day to review updates, share feedback and complete agreed next steps. No fixed daily hours are required.
+              For professionals with 5+ years of total professional work experience. No upfront payment to begin.
             </p>
           </div>
           <a
             href={siteConfig.forms.client}
             target="_blank"
             rel="noopener noreferrer"
-            className="shrink-0 inline-flex items-center gap-2 bg-[#1269A8] hover:bg-[#1686D9] text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition-colors shadow-2xs group"
+            className="shrink-0 inline-flex items-center gap-2 bg-[#1269A8] hover:bg-[#1686D9] text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition-colors shadow-xs group focus:outline-none focus:ring-2 focus:ring-[#1269A8] focus:ring-offset-2"
           >
             <span>Apply for Career Support</span>
-            <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5" />
           </a>
         </div>
       </div>
