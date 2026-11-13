@@ -10,7 +10,7 @@ export const siteConfig = {
   status: 'EARLY ACCESS',
   introLabel: 'CAREER TECHNOLOGY & SUPPORT',
   description:
-    'Discover Aagoi, an early-stage career-technology initiative offering personalised career support for experienced professionals while developing a broader connected career ecosystem.',
+    'Discover Aagoi, an early-stage career-technology initiative offering personalised career support for professionals with 5+ years of total professional work experience, including managers, senior specialists and business leaders, while developing a broader connected career ecosystem.',
   
   // Official Two Distinct Form Destinations
   forms: {

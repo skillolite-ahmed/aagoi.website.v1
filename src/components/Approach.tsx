@@ -126,7 +126,7 @@ export const Approach: React.FC = () => {
               Ready for a more structured career move?
             </h4>
             <p className="text-xs sm:text-sm text-[#526477] leading-relaxed">
-              Designed for experienced professionals with 5+ years of total work experience. We provide structured support, while you contribute a few minutes each working day to review updates, share feedback and complete agreed next steps. No fixed daily hours are required.
+              Designed for professionals with 5+ years of total professional work experience. We provide structured support, while you contribute a few minutes each working day to review updates, share feedback and complete agreed next steps. No fixed daily hours are required.
             </p>
           </div>
           <a

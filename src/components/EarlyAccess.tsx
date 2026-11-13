@@ -164,7 +164,7 @@ export const EarlyAccess: React.FC = () => {
           <div className="mt-10 pt-8 border-t border-[#E5EAF0] grid grid-cols-1 sm:grid-cols-4 gap-4 text-xs text-[#526477] text-center">
             <div className="flex items-center justify-center gap-2">
               <Briefcase className="w-4 h-4 text-[#1269A8]" />
-              <span>For 5+ Years Experience</span>
+              <span>5+ Years of Total Professional Work Experience</span>
             </div>
             <div className="flex items-center justify-center gap-2">
               <Clock className="w-4 h-4 text-[#17A6A0]" />

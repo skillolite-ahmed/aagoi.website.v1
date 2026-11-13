@@ -56,12 +56,17 @@ export const Hero: React.FC = () => {
               Aagoi brings together intelligent career technology and personalised human support to help experienced professionals navigate their next career move with greater clarity, direction and confidence.
             </p>
 
+            {/* Audience statement */}
+            <p className="text-sm sm:text-base text-[#526477] leading-relaxed max-w-2xl">
+              Designed for professionals with 5+ years of total professional work experience, including Managers, Senior Managers, Functional Heads, Senior Specialists and Business Leaders.
+            </p>
+
             {/* Supporting eligibility & payment indicators */}
             <div className="pt-2 flex flex-wrap gap-3">
               <div className="flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-white border border-[#E5EAF0] shadow-2xs">
                 <CheckCircle2 className="w-4 h-4 text-[#1269A8]" />
                 <span className="text-xs sm:text-sm font-semibold text-[#152D46]">
-                  For professionals with 5+ years of total work experience
+                  5+ years of total professional work experience
                 </span>
               </div>
 

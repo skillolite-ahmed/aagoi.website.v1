@@ -10,16 +10,16 @@ export const Audience: React.FC = () => {
         'Experienced individuals seeking intentional upward mobility, greater scope, or breaking through mid-career plateaus into higher-impact roles.',
       icon: TrendingUp,
       traits: [
-        'At least 5 years of professional experience',
+        '5+ years of total professional work experience',
         'Seeking strategic career progression',
         'Desire for structured market positioning',
       ],
     },
     {
-      title: 'Senior Specialists & Leaders',
+      title: 'Managers, Senior Specialists & Leaders',
       subtitle: 'Strategic & Confidential Moves',
       description:
-        'Functional heads, lead architects, and senior practitioners navigating high-stakes career transitions where alignment, culture, and discretion matter most.',
+        'Managers, Senior Managers, Functional Heads, experienced specialists and business leaders exploring strategic career moves and leadership opportunities.',
       icon: Briefcase,
       traits: [
         'Extensive domain mastery & track record',
@@ -53,7 +53,7 @@ export const Audience: React.FC = () => {
             Designed for Experienced Professionals
           </h2>
           <p className="text-lg text-[#526477] leading-relaxed">
-            Aagoi&apos;s personalised career support is intended for professionals with at least 5 years of total work experience who are ready to take a considered next step in their careers. This service is currently focused on experienced professionals rather than fresh graduates or entry-level job seekers.
+            Aagoi&apos;s personalised career support is intended for professionals with 5+ years of total professional work experience who are ready to take a considered next step in their careers. This service is currently focused on experienced professionals rather than fresh graduates or entry-level job seekers.
           </p>
         </div>
 
@@ -106,7 +106,7 @@ export const Audience: React.FC = () => {
                 Eligibility Focus
               </h4>
               <p className="text-xs sm:text-sm text-[#526477] leading-relaxed">
-                Aagoi&apos;s personalised career support is currently focused on experienced professionals with at least 5 years of total work experience, while our broader career-technology ecosystem is being built to support professionals across diverse stages over time.
+                Aagoi&apos;s personalised career support is currently focused on experienced professionals with 5+ years of total professional work experience, while our broader career-technology ecosystem is being built to support professionals across diverse stages over time.
               </p>
             </div>
           </div>
@@ -137,7 +137,7 @@ export const Audience: React.FC = () => {
               An Inclusive Long-Term Career Technology Vision
             </h4>
             <p className="text-sm text-[#526477] leading-relaxed">
-              While our current high-touch personalised assistance is tailored for experienced professionals (at least 5 years of experience), Aagoi&apos;s overarching career technology ecosystem is being developed to remain fundamentally inclusive across sectors, career stages, and backgrounds over time.
+              While our current high-touch personalised assistance is tailored for experienced professionals (5+ years of total professional work experience), Aagoi&apos;s overarching career technology ecosystem is being developed to remain fundamentally inclusive across sectors, career stages, and backgrounds over time.
             </p>
           </div>
         </div>
