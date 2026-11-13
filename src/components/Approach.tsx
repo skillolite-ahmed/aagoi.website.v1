@@ -5,24 +5,10 @@ import { siteConfig } from '../config/site';
 export const Approach: React.FC = () => {
   const cards = [
     {
-      id: 'tech',
-      title: 'Intelligent Career Technology',
-      description:
-        'AI-powered solutions that bring structure, insights and direction to career development.',
-      icon: CircuitBoard,
-      accentColor: '#1269A8',
-      features: [
-        'Insightful skill & trajectory mapping',
-        'Structured professional positioning',
-        'Intelligent opportunity identification',
-      ],
-      tag: 'Technology Layer',
-    },
-    {
       id: 'human',
       title: 'Personalised Human Support',
       description:
-        'Practical guidance and individual attention that complement technology throughout the career journey.',
+        'Practical guidance and individual attention delivered directly by our team throughout each stage of your career move.',
       icon: Users,
       accentColor: '#17A6A0',
       features: [
@@ -30,13 +16,27 @@ export const Approach: React.FC = () => {
         'Tailored transition strategy',
         'High-trust human perspective',
       ],
-      tag: 'Human Dimension',
+      tag: 'Current Service',
+    },
+    {
+      id: 'tech',
+      title: 'Intelligent Career Technology',
+      description:
+        'Developing AI-powered tools and structured digital solutions designed to bring analytical clarity, insights and long-term direction to career progression.',
+      icon: CircuitBoard,
+      accentColor: '#1269A8',
+      features: [
+        'Insightful skill & trajectory mapping',
+        'Structured professional positioning',
+        'Intelligent opportunity identification',
+      ],
+      tag: 'In Development',
     },
     {
       id: 'ecosystem',
       title: 'Connected Career Ecosystem',
       description:
-        'A more organised way to approach opportunities, professional connections and career progress.',
+        'Our developing ecosystem designed to provide an organised, continuous way to approach opportunities, professional connections and career progress.',
       icon: Network,
       accentColor: '#1686D9',
       features: [
@@ -44,7 +44,7 @@ export const Approach: React.FC = () => {
         'Curated professional networks',
         'Sustained career momentum',
       ],
-      tag: 'Ecosystem Architecture',
+      tag: 'Broader Vision',
     },
   ];
 
@@ -60,11 +60,11 @@ export const Approach: React.FC = () => {
             A Smarter, More Connected Approach to Career Growth.
           </h2>
           <p className="text-lg text-[#526477] leading-relaxed">
-            By bridging the analytical precision of intelligent software with genuine human empathy and strategic guidance, Aagoi delivers a seamless, dignified career journey.
+            By bridging practical human guidance with developing intelligent career technology, Aagoi delivers a structured, dignified career journey.
           </p>
         </div>
 
-        {/* Three Premium Feature Cards */}
+        {/* Three Feature Cards */}
         <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
           {cards.map((card) => {
             const Icon = card.icon;
@@ -125,8 +125,8 @@ export const Approach: React.FC = () => {
             <h4 className="text-base font-bold text-[#152D46]">
               Ready for a more structured career move?
             </h4>
-            <p className="text-xs sm:text-sm text-[#526477]">
-              Designed for experienced professionals with 5+ years of work experience. Flexible participation aligned with your schedule.
+            <p className="text-xs sm:text-sm text-[#526477] leading-relaxed">
+              Designed for experienced professionals with 5+ years of total work experience. We provide structured support, while you contribute a few minutes each working day to review updates, share feedback and complete agreed next steps. No fixed daily hours are required.
             </p>
           </div>
           <a
@@ -135,7 +135,7 @@ export const Approach: React.FC = () => {
             rel="noopener noreferrer"
             className="shrink-0 inline-flex items-center gap-2 bg-[#1269A8] hover:bg-[#1686D9] text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition-colors shadow-2xs group"
           >
-            <span>Explore Early Access</span>
+            <span>Apply for Career Support</span>
             <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5" />
           </a>
         </div>

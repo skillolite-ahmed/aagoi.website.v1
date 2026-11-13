@@ -7,10 +7,10 @@ export const siteConfig = {
   name: 'Aagoi',
   tagline: 'Moving Your Career Forward.',
   website: 'https://aagoi.in',
-  status: 'COMING SOON',
+  status: 'EARLY ACCESS',
   introLabel: 'CAREER TECHNOLOGY & SUPPORT',
   description:
-    'Aagoi brings together intelligent career technology and personalised human support to help experienced professionals navigate their next career move with greater clarity, direction and confidence.',
+    'Discover Aagoi, an early-stage career-technology initiative offering personalised career support for experienced professionals while developing a broader connected career ecosystem.',
   
   // Official Two Distinct Form Destinations
   forms: {

@@ -1,4 +1,4 @@
-# Aagoi — Official Website (Coming Soon)
+# Aagoi — Official Website (Early Access)
 
 > **Official Tagline:** Moving Your Career Forward.  
 > **Brand Identity:** Aagoi is an early-stage career technology initiative building a more intelligent, structured, and personalised approach to career growth.

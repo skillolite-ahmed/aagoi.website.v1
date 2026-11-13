@@ -29,13 +29,13 @@ export const Hero: React.FC = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
-          {/* LEFT COLUMN — APPROVED AAGOI WEBSITE MESSAGING */}
+          {/* LEFT COLUMN — AAGOI EARLY ACCESS & CAREER SUPPORT */}
           <div className="lg:col-span-7 space-y-6 text-left">
             {/* Status badges */}
             <div className="inline-flex flex-wrap items-center gap-2.5">
               <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold tracking-wider uppercase bg-[#1269A8]/10 text-[#1269A8] border border-[#1269A8]/20">
                 <span className="w-2 h-2 rounded-full bg-[#1269A8] animate-pulse" />
-                {siteConfig.status}
+                EARLY ACCESS
               </span>
 
               <span className="text-xs font-semibold tracking-wider uppercase text-[#526477] bg-white px-3 py-1 rounded-full border border-[#E5EAF0]">
@@ -61,7 +61,7 @@ export const Hero: React.FC = () => {
               <div className="flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-white border border-[#E5EAF0] shadow-2xs">
                 <CheckCircle2 className="w-4 h-4 text-[#1269A8]" />
                 <span className="text-xs sm:text-sm font-semibold text-[#152D46]">
-                  For professionals with 5+ years of experience
+                  For professionals with 5+ years of total work experience
                 </span>
               </div>
 
@@ -88,7 +88,7 @@ export const Hero: React.FC = () => {
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 bg-[#1269A8] hover:bg-[#1686D9] text-white text-base font-semibold px-7 py-3.5 rounded-xl shadow-md hover:shadow-lg transition-all duration-200 group focus:outline-none focus:ring-2 focus:ring-[#1269A8] focus:ring-offset-2"
               >
-                <span>Explore Early Access</span>
+                <span>Apply for Career Support</span>
                 <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
               </a>
 
@@ -103,11 +103,11 @@ export const Hero: React.FC = () => {
 
             {/* Supporting note */}
             <p className="text-xs sm:text-sm text-[#526477] pt-1">
-              Be among the first to explore what we&apos;re building. Designed for experienced professionals.
+              Aagoi is opening applications for its personalised career-support service while continuing to develop its broader career-technology ecosystem.
             </p>
           </div>
 
-          {/* RIGHT COLUMN — CAREER ECOSYSTEM */}
+          {/* RIGHT COLUMN — CAREER ECOSYSTEM (BROADER VISION) */}
           <div className="lg:col-span-5 relative">
             <div className="relative mx-auto max-w-md lg:max-w-none">
               {/* Subtle existing glow */}
@@ -160,22 +160,28 @@ interface Capability {
   Icon: React.ComponentType<{ className?: string }>;
   accent: string;
   iconBackground: string;
+  statusBadge: string;
+  statusColor: string;
 }
 
 const capabilities: Capability[] = [
-  {
-    title: 'Intelligent Career Technology',
-    description: 'AI-powered tools and structured career solutions.',
-    Icon: BrainCircuit,
-    accent: 'text-[#1269A8]',
-    iconBackground: 'bg-[#1269A8]/10',
-  },
   {
     title: 'Personalised Human Support',
     description: 'Individual guidance shaped around professional needs.',
     Icon: Users,
     accent: 'text-[#17A6A0]',
     iconBackground: 'bg-[#17A6A0]/10',
+    statusBadge: 'Current service',
+    statusColor: 'bg-[#17A6A0]/10 text-[#17A6A0] border border-[#17A6A0]/20',
+  },
+  {
+    title: 'Intelligent Career Technology',
+    description: 'AI-powered tools and structured career solutions.',
+    Icon: BrainCircuit,
+    accent: 'text-[#1269A8]',
+    iconBackground: 'bg-[#1269A8]/10',
+    statusBadge: 'In development',
+    statusColor: 'bg-[#1269A8]/10 text-[#1269A8] border border-[#1269A8]/20',
   },
   {
     title: 'Opportunity Discovery & Industry Access',
@@ -184,6 +190,8 @@ const capabilities: Capability[] = [
     Icon: Building2,
     accent: 'text-[#1269A8]',
     iconBackground: 'bg-[#1269A8]/10',
+    statusBadge: 'Broader vision',
+    statusColor: 'bg-[#526477]/10 text-[#526477] border border-[#526477]/20',
   },
 ];
 
@@ -194,12 +202,12 @@ const CareerEcosystem: React.FC = () => (
       alt="Aagoi logo"
       className="h-8 w-auto object-contain"
     />
-    <p className="mt-2 mb-3 text-[11px] font-semibold tracking-wide text-[#526477]">
-      Three connected capabilities
+    <p className="mt-2 mb-3 text-[11px] text-center font-medium leading-relaxed text-[#526477] max-w-sm">
+      An evolving career ecosystem — bringing together technology, guidance and professional opportunities. Some capabilities are currently in development.
     </p>
 
     <div className="w-full space-y-2">
-      {capabilities.map(({ title, description, Icon, accent, iconBackground }) => (
+      {capabilities.map(({ title, description, Icon, accent, iconBackground, statusBadge, statusColor }) => (
         <div
           key={title}
           className="flex min-h-20 items-center gap-3 rounded-xl border border-[#E5EAF0] bg-white px-3 py-2.5"
@@ -210,8 +218,13 @@ const CareerEcosystem: React.FC = () => (
           >
             <Icon className="h-5 w-5" />
           </span>
-          <div className="min-w-0">
-            <h3 className="text-sm font-bold leading-5 text-[#152D46]">{title}</h3>
+          <div className="min-w-0 flex-1">
+            <div className="flex items-center justify-between gap-1.5">
+              <h3 className="text-sm font-bold leading-5 text-[#152D46]">{title}</h3>
+              <span className={`text-[10px] font-semibold px-2 py-0.5 rounded-full shrink-0 ${statusColor}`}>
+                {statusBadge}
+              </span>
+            </div>
             <p className="mt-0.5 text-xs leading-4 text-[#526477]">{description}</p>
           </div>
         </div>

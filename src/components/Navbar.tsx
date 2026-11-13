@@ -58,7 +58,7 @@ export const Navbar: React.FC = () => {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-[#1269A8] hover:bg-[#1686D9] text-white text-sm font-semibold px-5 py-2.5 rounded-lg shadow-sm hover:shadow transition-all duration-200 group focus:outline-none focus:ring-2 focus:ring-[#1269A8] focus:ring-offset-2"
             >
-              <span>Explore Early Access</span>
+              <span>Apply for Career Support</span>
               <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </a>
           </div>
@@ -100,7 +100,7 @@ export const Navbar: React.FC = () => {
                 onClick={() => setMobileMenuOpen(false)}
                 className="flex items-center justify-center gap-2 w-full bg-[#1269A8] hover:bg-[#1686D9] text-white text-base font-semibold px-5 py-3 rounded-lg shadow-sm transition-colors"
               >
-                <span>Explore Early Access</span>
+                <span>Apply for Career Support</span>
                 <ArrowUpRight className="w-4 h-4" />
               </a>
             </div>

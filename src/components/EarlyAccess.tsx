@@ -18,21 +18,21 @@ export const EarlyAccess: React.FC = () => {
       num: '01',
       title: 'Submit Application',
       description:
-        'Share your background, current role, and career aspirations through our brief Stage 1 application form.',
+        'Complete a short application to introduce your professional background, experience and career goals.',
       icon: FileText,
     },
     {
       num: '02',
       title: 'Personal Discussion',
       description:
-        'An Aagoi team member reviews your profile and connects directly via WhatsApp to understand your goals and explain how the service works.',
+        'Our team reviews your application and contacts you personally through WhatsApp to understand your goals, explain the service, clarify participation expectations and discuss payment terms.',
       icon: MessageSquare,
     },
     {
       num: '03',
-      title: 'Aligned Onboarding',
+      title: 'Detailed Assessment & Onboarding',
       description:
-        'If the approach fits your goals, we privately share detailed onboarding materials and begin structured support tailored to your schedule.',
+        'If you decide to proceed, we privately share a detailed career assessment. After reviewing your profile and confirming alignment, we move forward with onboarding where appropriate.',
       icon: Sparkles,
     },
   ];
@@ -47,7 +47,9 @@ export const EarlyAccess: React.FC = () => {
           {/* Section Header */}
           <div className="text-center max-w-3xl mx-auto">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-[#1269A8]/10 text-[#1269A8] mb-6">
-              Client Early Access
+              <span>Personalised Career Support</span>
+              <span className="text-[#1269A8]/40">&bull;</span>
+              <span className="text-[#1686D9] font-bold">EARLY ACCESS</span>
             </div>
 
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#152D46] tracking-tight">
@@ -55,7 +57,7 @@ export const EarlyAccess: React.FC = () => {
             </h2>
 
             <p className="mt-6 text-base sm:text-lg text-[#526477] leading-relaxed">
-              Interested in exploring Aagoi&apos;s personalised career assistance? Introduce yourself through our Early Access application form. Our team reviews every profile individually and connects personally via WhatsApp to discuss your career goals, explain expectations, and share how the service works.
+              Looking for a more structured way to approach your next career move? Introduce yourself through Aagoi&apos;s career-support application. Our team reviews each application individually and connects personally via WhatsApp to understand your career goals, explain how our support works, and discuss the expectations and next steps before you decide whether to proceed.
             </p>
           </div>
 
@@ -153,7 +155,7 @@ export const EarlyAccess: React.FC = () => {
               rel="noopener noreferrer"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-[#1269A8] hover:bg-[#1686D9] text-white text-base font-semibold px-8 py-4 rounded-xl shadow-md hover:shadow-xl transition-all duration-200 group focus:outline-none focus:ring-2 focus:ring-[#1269A8] focus:ring-offset-2"
             >
-              <span>Apply for Early Access</span>
+              <span>Apply for Career Support</span>
               <ArrowUpRight className="w-5 h-5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </a>
           </div>
@@ -166,11 +168,11 @@ export const EarlyAccess: React.FC = () => {
             </div>
             <div className="flex items-center justify-center gap-2">
               <Clock className="w-4 h-4 text-[#17A6A0]" />
-              <span>Flexible Schedule</span>
+              <span>A Few Minutes Each Working Day</span>
             </div>
             <div className="flex items-center justify-center gap-2">
               <ShieldCheck className="w-4 h-4 text-[#1686D9]" />
-              <span>Strictly Confidential</span>
+              <span>Clear Terms Before You Begin</span>
             </div>
             <div className="flex items-center justify-center gap-2">
               <UserCheck className="w-4 h-4 text-[#1269A8]" />

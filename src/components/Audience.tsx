@@ -10,7 +10,7 @@ export const Audience: React.FC = () => {
         'Experienced individuals seeking intentional upward mobility, greater scope, or breaking through mid-career plateaus into higher-impact roles.',
       icon: TrendingUp,
       traits: [
-        '5+ years of verified professional experience',
+        'At least 5 years of professional experience',
         'Seeking strategic career progression',
         'Desire for structured market positioning',
       ],
@@ -50,10 +50,10 @@ export const Audience: React.FC = () => {
             Who We Help
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#152D46] tracking-tight">
-            Built Around Your Career Experience.
+            Designed for Experienced Professionals
           </h2>
           <p className="text-lg text-[#526477] leading-relaxed">
-            Our personalised career assistance is designed specifically for experienced professionals with <strong className="text-[#152D46]">at least 5 years of total work experience</strong> who are considering their next career move.
+            Aagoi&apos;s personalised career support is intended for professionals with at least 5 years of total work experience who are ready to take a considered next step in their careers. This service is currently focused on experienced professionals rather than fresh graduates or entry-level job seekers.
           </p>
         </div>
 
@@ -94,32 +94,34 @@ export const Audience: React.FC = () => {
           })}
         </div>
 
-        {/* Key Service Criteria & Flexible Commitment Banner */}
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
+        {/* Key Service Criteria & Participation Commitment */}
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
+          {/* Card 1: Eligibility Focus */}
           <div className="bg-[#F7F9FC] border border-[#E5EAF0] rounded-2xl p-6 sm:p-7 flex items-start gap-4">
             <div className="w-10 h-10 rounded-xl bg-[#1269A8]/10 text-[#1269A8] flex items-center justify-center shrink-0 mt-0.5">
               <Briefcase className="w-5 h-5" />
             </div>
             <div>
-              <h4 className="text-base font-bold text-[#152D46] mb-1">
-                For Professionals with 5+ Years Experience
+              <h4 className="text-base font-bold text-[#152D46] mb-1.5">
+                Eligibility Focus
               </h4>
               <p className="text-xs sm:text-sm text-[#526477] leading-relaxed">
-                This personalised service is structured specifically for professionals who already possess a track record in the workforce. It is not designed for fresh graduates or entry-level job seekers.
+                Aagoi&apos;s personalised career support is currently focused on experienced professionals with at least 5 years of total work experience, while our broader career-technology ecosystem is being built to support professionals across diverse stages over time.
               </p>
             </div>
           </div>
 
+          {/* Card 2: A Small Daily Commitment */}
           <div className="bg-[#F7F9FC] border border-[#E5EAF0] rounded-2xl p-6 sm:p-7 flex items-start gap-4">
             <div className="w-10 h-10 rounded-xl bg-[#17A6A0]/10 text-[#17A6A0] flex items-center justify-center shrink-0 mt-0.5">
               <Clock className="w-5 h-5" />
             </div>
             <div>
-              <h4 className="text-base font-bold text-[#152D46] mb-1">
-                Flexible Participation
+              <h4 className="text-base font-bold text-[#152D46] mb-1.5">
+                A Small Daily Commitment. A More Focused Career Move.
               </h4>
               <p className="text-xs sm:text-sm text-[#526477] leading-relaxed">
-                Your career journey is built around your schedule. You participate according to your professional availability and a mutually agreed timeline, with no rigid daily-hours requirement.
+                Your career progress works best when we work together. Aagoi provides personalised guidance and structured support, while your active participation helps us move things forward. We ask you to set aside a few minutes each working day to review updates, share feedback, respond to relevant opportunities and complete agreed next steps. There is no fixed daily time requirement or need for lengthy sessions—just consistent involvement and timely communication, fitted around your existing schedule.
               </p>
             </div>
           </div>
@@ -135,7 +137,7 @@ export const Audience: React.FC = () => {
               An Inclusive Long-Term Career Technology Vision
             </h4>
             <p className="text-sm text-[#526477] leading-relaxed">
-              While our high-touch personalised assistance is tailored for experienced career milestones (5+ years), Aagoi’s overarching career technology ecosystem is being developed to remain fundamentally inclusive across sectors, career stages, and backgrounds.
+              While our current high-touch personalised assistance is tailored for experienced professionals (at least 5 years of experience), Aagoi&apos;s overarching career technology ecosystem is being developed to remain fundamentally inclusive across sectors, career stages, and backgrounds over time.
             </p>
           </div>
         </div>

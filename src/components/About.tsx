@@ -18,15 +18,14 @@ export const About: React.FC = () => {
             stronger professional positioning, meaningful connections and a structured approach.
           </p>
           <p className="text-base sm:text-lg text-[#526477] leading-relaxed">
-            Aagoi is an early-stage career technology and support initiative that brings intelligent tools,
-            practical solutions and personalised human guidance together to help experienced professionals
-            make better-informed career decisions and navigate their next move.
+            Aagoi is an early-stage career-technology initiative developing a broader career ecosystem
+            while currently providing personalised career support to experienced professionals.
           </p>
         </div>
 
         {/* Comparison / Structured Perspective Grid */}
         <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
-          {/* Card 1: Traditional Activity-Oriented Trap */}
+          {/* Card 1: Fragmented Job-Search Activity */}
           <div className="bg-[#F7F9FC] border border-[#E5EAF0] rounded-2xl p-8 relative flex flex-col justify-between">
             <div>
               <div className="flex items-center justify-between mb-4">
@@ -38,34 +37,34 @@ export const About: React.FC = () => {
                 </span>
               </div>
               <h3 className="text-xl font-bold text-[#152D46] mb-3">
-                Fragmented Job Applications
+                Fragmented Job-Search Activity
               </h3>
               <p className="text-[#526477] text-sm leading-relaxed mb-6">
-                Most platforms encourage repetitive submissions into opaque ATS databases, generic mass outreach, and endless waiting—leaving experienced professionals undervalued and exhausted.
+                Job searching can involve multiple platforms, repeated applications, scattered communication and disconnected activities. Without a clear direction, it can become difficult to identify relevant opportunities and maintain consistent progress.
               </p>
 
               <ul className="space-y-3 text-sm text-[#526477]">
                 <li className="flex items-start gap-2.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#526477] mt-2 shrink-0" />
-                  <span>Submitting endless resumes without feedback or tailored context</span>
+                  <span>Submitting repeated applications across multiple platforms with scattered communication</span>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#526477] mt-2 shrink-0" />
-                  <span>Unstructured outreach detached from genuine career trajectory</span>
+                  <span>Disconnected activities lacking a cohesive strategy or individual direction</span>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#526477] mt-2 shrink-0" />
-                  <span>Generic automated tools lacking nuanced human discernment</span>
+                  <span>Generic outreach detached from genuine career positioning and trajectory</span>
                 </li>
               </ul>
             </div>
 
             <div className="mt-8 pt-6 border-t border-[#E5EAF0] text-xs text-[#526477] font-medium italic">
-              High volume, low clarity, zero individual strategy.
+              Activity matters—but direction, relevance and consistency matter too.
             </div>
           </div>
 
-          {/* Card 2: The Aagoi Career Ecosystem */}
+          {/* Card 2: Structured Career Technology & Human Guidance */}
           <div className="bg-gradient-to-br from-white via-white to-[#F7F9FC] border-2 border-[#1269A8]/30 rounded-2xl p-8 relative shadow-sm flex flex-col justify-between">
             {/* Top Accent Pill */}
             <div className="absolute -top-3 right-8 bg-[#1269A8] text-white text-xs font-bold px-3.5 py-1 rounded-full uppercase tracking-wider shadow-sm">
@@ -82,10 +81,10 @@ export const About: React.FC = () => {
                 </span>
               </div>
               <h3 className="text-xl font-bold text-[#152D46] mb-3">
-                Structured Career Technology & Human Guidance
+                Structured Career Technology &amp; Human Guidance
               </h3>
               <p className="text-[#526477] text-sm leading-relaxed mb-6">
-                We combine intelligent technology with high-touch human expertise to position your real professional value, connect with aligned opportunities, and unlock structured progression.
+                Aagoi brings structure, intelligent career technology and personalised human support together. We currently deliver tailored, individual guidance to experienced professionals, with the goal of expanding into a comprehensive digital career ecosystem.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
@@ -115,34 +114,34 @@ export const About: React.FC = () => {
           </div>
         </div>
 
-        {/* Pillars Strip */}
+        {/* Pillars Strip: Broader Positioning Pillars */}
         <div className="mt-12 bg-[#F7F9FC] rounded-xl border border-[#E5EAF0] p-6 sm:p-8">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center sm:text-left divide-y sm:divide-y-0 sm:divide-x divide-[#E5EAF0]">
             <div className="sm:px-4 first:pl-0 pt-4 sm:pt-0">
               <div className="flex items-center justify-center sm:justify-start gap-2 text-[#152D46] font-bold text-base mb-1">
                 <CheckCircle2 className="w-4 h-4 text-[#17A6A0]" />
-                <span>Not a Resume Shop</span>
+                <span>Beyond Resume Formatting</span>
               </div>
               <p className="text-xs sm:text-sm text-[#526477]">
-                We don&apos;t just reformat keywords—we clarify your career narrative and strategic positioning.
+                We don&apos;t just format documents—our current service clarifies your professional positioning and strategic narrative, while our developing platform will offer intelligent career tools.
               </p>
             </div>
             <div className="sm:px-4 pt-4 sm:pt-0">
               <div className="flex items-center justify-center sm:justify-start gap-2 text-[#152D46] font-bold text-base mb-1">
                 <CheckCircle2 className="w-4 h-4 text-[#17A6A0]" />
-                <span>Not a Job Board</span>
+                <span>Beyond Job Listings</span>
               </div>
               <p className="text-xs sm:text-sm text-[#526477]">
-                We do not dump thousands of random listings; we focus on curated alignment and structured moves.
+                Rather than endless random listings, our current service focuses on curated alignment, direction and high-relevance career opportunities.
               </p>
             </div>
             <div className="sm:px-4 last:pr-0 pt-4 sm:pt-0">
               <div className="flex items-center justify-center sm:justify-start gap-2 text-[#152D46] font-bold text-base mb-1">
                 <CheckCircle2 className="w-4 h-4 text-[#17A6A0]" />
-                <span>Ecosystem Vision</span>
+                <span>A Connected Career Ecosystem</span>
               </div>
               <p className="text-xs sm:text-sm text-[#526477]">
-                We are engineering an interconnected ecosystem that unites intelligence, tools, and human trust.
+                While we currently provide personalised career support to experienced professionals, we are building a broader connected technology ecosystem for lifelong career progression.
               </p>
             </div>
           </div>
