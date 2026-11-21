@@ -20,7 +20,7 @@ export const EthicalFoundation: React.FC = () => {
 
           {/* Paragraph 2 */}
           <p className="text-base sm:text-lg text-[#526477] leading-relaxed">
-            These principles guide how we build our business, approach opportunities, develop partnerships and create solutions. We believe that trust, responsibility and integrity are fundamental to building something meaningful and lasting.
+            These principles guide our business decisions, operations, partnerships and the solutions we build. We believe that trust, responsibility and integrity are fundamental to building something meaningful and lasting.
           </p>
 
           {/* Closing Statement */}
