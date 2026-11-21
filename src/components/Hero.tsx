@@ -6,7 +6,7 @@ export const Hero: React.FC = () => {
   return (
     <section
       id="home"
-      className="relative pt-28 pb-16 md:pt-32 md:pb-20 lg:pt-36 lg:pb-24 overflow-hidden bg-[#0F1E2D]"
+      className="relative pt-28 pb-12 md:pt-32 lg:pt-36 lg:pb-12 overflow-hidden bg-[#0F1E2D]"
     >
       {/* Background gradient layer */}
       <div
@@ -109,7 +109,7 @@ export const Hero: React.FC = () => {
           </div>
 
           {/* Right Column: Upward Career Trajectory Illustration */}
-          <div className="lg:col-span-5 flex items-center justify-center">
+          <div className="hidden lg:flex lg:col-span-5 items-center justify-center">
             <div className="relative w-full max-w-md lg:max-w-none">
               {/* Subtle ambient backdrop */}
               <div
@@ -117,7 +117,7 @@ export const Hero: React.FC = () => {
                 className="absolute -inset-4 bg-gradient-to-tr from-[#1269A8]/15 via-[#1686D9]/10 to-[#17A6A0]/15 rounded-3xl blur-2xl -z-10"
               />
 
-              <div className="w-full aspect-square max-w-[440px] mx-auto flex items-center justify-center p-4">
+              <div className="w-full lg:aspect-square max-w-[440px] mx-auto flex items-center justify-center p-4">
                 <svg
                   viewBox="0 0 440 440"
                   fill="none"
