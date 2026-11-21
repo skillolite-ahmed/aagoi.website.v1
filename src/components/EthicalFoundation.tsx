@@ -10,23 +10,23 @@ export const EthicalFoundation: React.FC = () => {
 
           {/* Heading */}
           <h2 className="text-2xl sm:text-3xl font-extrabold text-[#152D46] tracking-tight">
-            Our Ethical Foundation
+            Our Principles
           </h2>
 
           {/* Paragraph 1 */}
           <p className="text-base sm:text-lg text-[#526477] leading-relaxed">
-            Aagoi&apos;s business philosophy is inspired by Islamic principles of honesty, integrity, fairness, trust (Amanah) and accountability.
+            Aagoi is built on principles of honesty, integrity, fairness and accountability, inspired by Islamic values.
           </p>
 
           {/* Paragraph 2 */}
           <p className="text-base sm:text-lg text-[#526477] leading-relaxed">
-            We believe these values can benefit everyone, regardless of religion or background. We aim to uphold transparency, respect, responsible employment and ethical business practices.
+            These principles guide how we build our business, approach opportunities, develop partnerships and create solutions. We believe that trust, responsibility and integrity are fundamental to building something meaningful and lasting.
           </p>
 
           {/* Closing Statement */}
           <div className="pt-4">
             <p className="text-lg sm:text-xl font-bold text-[#152D46] leading-snug">
-              Our principles are rooted in Islamic values, but our doors are open to everyone.
+              Our values are rooted in Islamic principles, while our services and vision are open to everyone, regardless of background or belief.
             </p>
           </div>
         </div>
