@@ -5,7 +5,7 @@ const services = [
     num: '01',
     title: 'Opportunity Research',
     description:
-      'We actively research job opportunities aligned with your experience, career goals, preferences and target roles—focusing on relevance rather than simply collecting vacancies.',
+      'We actively research job opportunities aligned with your experience, career goals, preferences and target roles focusing on relevance rather than simply collecting vacancies.',
     note: 'Relevant opportunities, thoughtfully identified.',
   },
   {
