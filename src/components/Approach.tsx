@@ -44,7 +44,7 @@ export const Approach: React.FC = () => {
             We Do the Groundwork. You Take the Next Step.
           </h2>
           <p className="text-base sm:text-lg text-[#526477] leading-relaxed">
-            Aagoi takes care of the time-consuming groundwork behind your career move—from researching relevant opportunities and companies to identifying professional contacts and preparing personalised outreach. We bring the research, preparation and coordination together, so you can focus on reviewing opportunities, building connections and moving forward.
+            Aagoi takes care of the time-consuming groundwork behind your career move from researching relevant opportunities and companies to identifying professional contacts and preparing personalised outreach. We bring the research, preparation and coordination together, so you can focus on reviewing opportunities, building connections and moving forward.
           </p>
         </div>
 
