@@ -19,7 +19,7 @@ const services = [
     num: '03',
     title: 'Personalised Outreach Preparation',
     description:
-      'We prepare tailored connection notes, outreach messages and follow-ups based on the opportunity and contact. You receive ready-to-use messages to review and send through your own professional accounts.',
+      'We prepare tailored outreach messages based on the opportunity and contact. You receive ready-to-use messages to review and send through your own professional accounts.',
     note: 'The groundwork prepared. The connection remains yours.',
   },
   {
