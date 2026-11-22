@@ -3,72 +3,75 @@ import React from 'react';
 const services = [
   {
     num: '01',
-    title: 'Career Direction & Clarity',
+    title: 'Opportunity Research',
     description:
-      'Build a clearer picture of your next move by aligning your experience, strengths and career ambitions.',
-    note: 'Clarity before the next move.',
+      'We actively research job opportunities aligned with your experience, career goals, preferences and target roles—focusing on relevance rather than simply collecting vacancies.',
+    note: 'Relevant opportunities, thoughtfully identified.',
   },
   {
     num: '02',
-    title: 'Professional Positioning',
+    title: 'Company & Contact Discovery',
     description:
-      'Present your experience, achievements and capabilities with clarity, so your professional profile reflects the roles you want to pursue.',
-    note: 'Your experience, clearly communicated.',
+      'Beyond job listings, we explore suitable companies and identify relevant HR professionals, recruiters and potential referral connections to help you approach opportunities more strategically.',
+    note: 'Know where to look and whom to approach.',
   },
   {
     num: '03',
-    title: 'Relevant Career Opportunities',
+    title: 'Personalised Outreach Preparation',
     description:
-      'Focus on opportunities that fit your experience, preferences and career direction — not simply the number of openings available.',
-    note: 'Relevance over volume.',
+      'We prepare tailored connection notes, outreach messages and follow-ups based on the opportunity and contact. You receive ready-to-use messages to review and send through your own professional accounts.',
+    note: 'The groundwork prepared. The connection remains yours.',
   },
   {
     num: '04',
-    title: 'Coordinated Career Support',
+    title: 'Career Search Coordination',
     description:
-      'Receive personalised guidance and organised support as you review opportunities, share feedback and move through your career transition.',
-    note: 'Guidance with you in control.',
+      'We organise opportunities, contacts, outreach progress and follow-up actions, while providing profile, resume and application support where relevant throughout your career search.',
+    note: 'An organised search. A clearer path forward.',
   },
 ];
 
 export const Approach: React.FC = () => {
   return (
-    <section id="approach" className="py-24 bg-[#F7F9FC] border-t border-[#E5EAF0]">
+    <section id="approach" className="py-16 sm:py-20 lg:py-24 bg-[#F7F9FC] border-t border-[#E5EAF0]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Left-aligned Section header */}
-        <div className="max-w-3xl space-y-4 mb-16 text-left">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider bg-[#1269A8]/10 text-[#1269A8]">
+        <div className="max-w-3xl space-y-4 mb-10 sm:mb-12 lg:mb-16 text-left">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-sm font-semibold uppercase tracking-wider bg-[#1269A8]/10 text-[#1269A8]">
             Our Services
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#152D46] tracking-tight">
-            Support Built Around Your Next Career Move.
+            We Do the Groundwork. You Take the Next Step.
           </h2>
           <p className="text-base sm:text-lg text-[#526477] leading-relaxed">
-            From gaining career direction to presenting your experience with clarity, Aagoi brings intelligent technology, strategic guidance and human understanding to your next move.
+            Aagoi takes care of the time-consuming groundwork behind your career move—from researching relevant opportunities and companies to identifying professional contacts and preparing personalised outreach. We bring the research, preparation and coordination together, so you can focus on reviewing opportunities, building connections and moving forward.
           </p>
         </div>
 
-        {/* 2x2 Editorial Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-12 lg:gap-x-16 lg:gap-y-14">
+        {/* 2×2 Editorial Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8 sm:gap-y-10 lg:gap-x-16 lg:gap-y-14">
           {services.map((service) => (
-            <div key={service.num} className="flex flex-col justify-between">
+            <div
+              key={service.num}
+              className="group flex flex-col justify-between bg-white border border-[#E5EAF0] rounded-2xl p-6 sm:p-8 hover:border-[#1269A8]/30 hover:shadow-sm transition-all duration-300"
+            >
               <div>
                 {/* Large Numeral in brand blue */}
-                <div className="text-3xl sm:text-4xl font-extrabold text-[#1269A8] tracking-tight mb-3">
+                <div className="text-3xl sm:text-4xl font-extrabold text-[#1269A8]/30 tracking-tight mb-3 group-hover:text-[#1269A8]/50 transition-colors duration-300">
                   {service.num}
                 </div>
                 {/* Title */}
                 <h3 className="text-xl sm:text-2xl font-bold text-[#152D46] mb-3">
                   {service.title}
                 </h3>
-                {/* Description 16-17px */}
-                <p className="text-base sm:text-[17px] text-[#526477] leading-relaxed mb-6">
+                {/* Description */}
+                <p className="text-base sm:text-[17px] text-[#526477] leading-relaxed mb-5 sm:mb-6">
                   {service.description}
                 </p>
               </div>
-              {/* Note under a hairline */}
+              {/* Supporting note under a hairline */}
               <div className="pt-3 border-t border-[#E5EAF0]">
-                <span className="text-xs sm:text-sm font-medium text-[#17A6A0]">
+                <span className="text-sm font-medium text-[#17A6A0]">
                   {service.note}
                 </span>
               </div>
