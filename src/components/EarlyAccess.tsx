@@ -18,23 +18,23 @@ import { siteConfig } from '../config/site';
 const participationPoints = [
   {
     icon: CheckSquare,
-    title: 'Review and Approve Opportunities',
-    description: 'Review opportunities we present and confirm which to progress.',
+    title: 'Review Opportunities',
+    description: 'Review the opportunities we share and let us know which ones align with your goals.',
   },
   {
     icon: MessageCircle,
-    title: 'Timely Feedback',
-    description: 'Share feedback, respond to updates and confirm next steps promptly.',
+    title: 'Share Feedback',
+    description: 'Your feedback helps us refine our search and focus on what matters to you.',
   },
   {
     icon: Bell,
-    title: 'Keep Communication Open',
-    description: 'Remain available via WhatsApp during working hours for important updates.',
+    title: 'Stay Connected',
+    description: 'Keep in touch through WhatsApp for important updates, discussions and next steps.',
   },
   {
     icon: Lock,
-    title: 'Provide Accurate Information',
-    description: 'Share accurate professional information to ensure well-matched opportunities.',
+    title: 'Keep Your Information Updated',
+    description: 'Share accurate information and let us know about relevant changes to your experience, preferences or career goals.',
   },
 ];
 
@@ -74,10 +74,10 @@ export const EarlyAccess: React.FC = () => {
               How We Work Together
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#152D46] tracking-tight">
-              A partnership that requires your participation.
+              A partnership built around your goals.
             </h2>
             <p className="text-base sm:text-lg text-[#526477] leading-relaxed">
-              Aagoi provides structured support, guidance and coordination. For it to work effectively, your active involvement is essential throughout the process.
+              Aagoi takes care of the research, preparation and coordination. Your involvement helps us keep the search aligned with your goals and move forward when relevant opportunities arise.
             </p>
           </div>
 
@@ -114,10 +114,10 @@ export const EarlyAccess: React.FC = () => {
               </div>
               <div className="space-y-2">
                 <h4 className="text-lg font-bold text-[#152D46]">
-                  A Small Daily Commitment. A More Focused Career Move.
+                  A Little Involvement. A More Focused Career Move.
                 </h4>
                 <p className="text-sm sm:text-base text-[#526477] leading-relaxed">
-                  We ask you to set aside a few minutes each working day to review updates, share feedback, respond to relevant opportunities and complete agreed next steps. There is no fixed daily time requirement or need for lengthy sessions — just consistent involvement and timely communication, fitted around your existing schedule.
+                  Your involvement is designed to fit around your existing professional commitments. Simply review relevant updates, share feedback and respond when action is needed. A few minutes on most working days can help keep things moving, although the time required may vary depending on opportunities and ongoing discussions.
                 </p>
               </div>
             </div>
